@@ -1,0 +1,21 @@
+{
+	"recommendations": [
+		"ban.spellright",
+        "coenraads.bracket-pair-colorizer",
+        "DavidAnson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "fcrespo82.markdown-table-formatter",
+        "github.vscode-pull-request-github",
+        "Gruntfuggly.todo-tree",
+        "johnpapa.vscode-peacock",
+        "lostintangent.vsls-whiteboard",
+        "mhutchie.git-graph",
+        "ms-vscode.powershell",
+        "ms-vsliveshare.vsliveshare-pack",
+        "shardulm94.trailing-spaces",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "vscode-icons-team.vscode-icons",
+        "yzhang.markdown-all-in-one",
+	]
+}
