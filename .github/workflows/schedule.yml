@@ -12,7 +12,7 @@ jobs:
       uses: Ash258/Scoop-GithubActions@stable-win
       env:
         GITH_EMAIL: alexchapar@users.noreply.github.com
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_BS_TOKEN }}
         SHOVEL: '1'
         SCOOP_BRANCH: 'NEW'
         SKIP_UPDATED: '1'
