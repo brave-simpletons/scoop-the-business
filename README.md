@@ -1,4 +1,4 @@
-# Scoop the Business
+# Scoop the Business Bucket
 
 [![GitHub](https://img.shields.io/github/license/brave-simpletons/scoop-the-business)](https://github.com/brave-simpletons/scoop-the-business/blob/main/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/brave-simpletons/scoop-the-business/main?logo=git&logoColor=white)](https://github.com/brave-simpletons/scoop-the-business/commits/main)
@@ -16,7 +16,14 @@ Another bucket for scoop
 >
 > :construction:
 
-## ref
+## How to use our bucket
 
+To use it, only add our bucket into scoop:
+
+`scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'`
+
+## References used to start this project
+
+- Proposed template : [GenericBucket](https://github.com/Ash258/GenericBucket)
 - Automation : [Scoop-Ash258](https://github.com/Ash258/Scoop-Ash258)
 - [Scoop Wiki Buckets](https://github.com/lukesampson/scoop/wiki/Buckets)
