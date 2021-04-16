@@ -22,6 +22,10 @@ To use it, only add our bucket into scoop:
 
 `scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'`
 
+## Contributing
+
+Follow [How to Contribute](.github/CONTRIBUTING.md) page
+
 ## References used to start this project
 
 - Proposed template : [GenericBucket](https://github.com/Ash258/GenericBucket)
