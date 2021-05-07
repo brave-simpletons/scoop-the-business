@@ -72,7 +72,7 @@
         "url": "https://download.gimp.org/mirror/pub/gimp/v$matchMinver/windows/gimp-$matchSetupversionname.exe",
         "hash": {
             "url": "https://www.gimp.org/downloads/",
-            "regex": "<h3>Hash Sum</h3>.*<p>.*<code>$basename</code>.*<kbd>$sha256</kdb></p>"
+            "regex": "(?sm)<h3>Hash Sum<\/h3>.*<p>.*<code>$basename<\/code>.*<kbd>$sha256<\/kbd>.*<\/p>"
         }
     }
 }
