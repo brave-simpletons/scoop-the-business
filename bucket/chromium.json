@@ -1,0 +1,35 @@
+{
+    "##": "Check chromium.woolyss.com for different versions of Chromium releases.",
+    "version": "90.0.4430.93",
+    "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web.",
+    "homepage": "https://www.chromium.org",
+    "license": "BSD-3-Clause",
+    "url": "https://github.com/macchrome/winchrome/releases/download/v90.0.4430.93-r857950-Win64/ungoogled-chromium-90.0.4430.93-1_Win64.7z",
+    "hash": "sha1:1178e0bcaabbd29483e50c2e9f8a307903de8af4",
+    "extract_dir": "ungoogled-chromium-90.0.4430.93-1_Win64",
+    "bin": [
+        "chrome.exe",
+        [
+            "chrome.exe",
+            "chromium"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Chromium"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/macchrome/winchrome",
+        "regex": "v([\\d.]+)-r(?<build>\\d+)-Win64"
+    },
+    "autoupdate": {
+        "url": "https://github.com/macchrome/winchrome/releases/download/v$version-r$matchBuild-Win64/ungoogled-chromium-$version-1_Win64.7z",
+        "extract_dir": "ungoogled-chromium-$version-1_Win64",
+        "hash": {
+            "url": "https://github.com/macchrome/winchrome/releases/v$version-r$matchBuild-Win64",
+            "regex": "(?s)$basename.*?$sha1"
+        }
+    }
+}
