@@ -36,14 +36,14 @@
                 "url": "https://dl.google.com/release2/chrome/$match64_$version/$version_chrome_installer.exe#/dl.7z",
                 "hash": {
                     "url": "https://chrome-dl.com/api/chrome.min.xml",
-                    "regex": "(?sm)<stable64>.*<sha256>(ELEMENT=packageATTRIBUTE=fpVALUE=1\\.)?$sha256<\/sha256>.*<\/stable64>"
+                    "regex": "(?sm)<stable64>.*<sha256>(ELEMENT=packageATTRIBUTE=fpVALUE=1\\.)?(?<sha256>$sha256)</sha256>.*</stable64>"
                 }
             },
             "32bit": {
                 "url": "https://dl.google.com/release2/chrome/$match32_$version/$version_chrome_installer.exe#/dl.7z",
                 "hash": {
                     "url": "https://chrome-dl.com/api/chrome.min.xml",
-                    "regex": "(?sm)<stable32>.*<sha256>(ELEMENT=packageATTRIBUTE=fpVALUE=1\\.)?$sha256<\/sha256>.*<\/stable32>"
+                    "regex": "(?sm)<stable32>.*<sha256>(ELEMENT=packageATTRIBUTE=fpVALUE=1\\.)?(?<sha256>$sha256)</sha256>.*</stable32>"
                 }
             }
         }
