@@ -16,7 +16,7 @@
         "\"$dir\\bin\\mongod.exe --config NEW_CONFIG_FILE\""
     ],
     "suggest": {
-        "Visual C/C++ Redistributable 2017": "extras/vcredist2017"
+        "Visual C/C++ Redistributable 2019": "vcredist2019"
     },
     "architecture": {
         "64bit": {

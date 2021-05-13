@@ -4,7 +4,7 @@
     "homepage": "https://github.com/microsoft/terminal",
     "license": "MIT",
     "suggest": {
-        "vcredist": "extras/vcredist2019"
+        "vcredist": "vcredist2019"
     },
     "url": "https://github.com/microsoft/terminal/releases/download/v1.7.1091.0/Microsoft.WindowsTerminal_1.7.1091.0_8wekyb3d8bbwe.msixbundle#/dl.7z",
     "hash": "dd47f7d3773528dc9a8e31d52a08f4a8d9ee58d4388090bc892546fffbd90d29",
