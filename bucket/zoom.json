@@ -6,7 +6,7 @@
         "identifier": "Proprietary",
         "url": "https://zoom.us/terms"
     },
-    "depends": "vcredist",
+    "depends": "vcredist2019",
     "architecture": {
         "64bit": {
             "url": "https://zoom.us/client/5.6.5.823/ZoomInstaller.exe?archType=x64#/dl.7z",
