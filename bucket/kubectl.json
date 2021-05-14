@@ -5,27 +5,27 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://storage.googleapis.com/kubernetes-release/release/v1.21.1/kubernetes-client-windows-amd64.tar.gz",
+            "url": "https://dl.k8s.io/release/v1.21.1/kubernetes-client-windows-amd64.tar.gz",
             "hash": "4e013fa5563d03a5e6c7dcbe56dabcc82c866bac28ec268500dfaf8a8fcdfb7c"
         },
         "32bit": {
-            "url": "https://storage.googleapis.com/kubernetes-release/release/v1.21.1/kubernetes-client-windows-386.tar.gz",
+            "url": "https://dl.k8s.io/release/v1.21.1/kubernetes-client-windows-386.tar.gz",
             "hash": "80894bd11dd9c2df9367670c0a10129d177c3d8683bf6572bbaedd1b45914586"
         }
     },
     "extract_dir": "kubernetes\\client",
     "bin": "bin\\kubectl.exe",
     "checkver": {
-        "url": "https://storage.googleapis.com/kubernetes-release/release/stable.txt",
+        "url": "https://dl.k8s.io/release/stable.txt",
         "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://storage.googleapis.com/kubernetes-release/release/v$version/kubernetes-client-windows-amd64.tar.gz"
+                "url": "https://dl.k8s.io/release/v$version/kubernetes-client-windows-amd64.tar.gz"
             },
             "32bit": {
-                "url": "https://storage.googleapis.com/kubernetes-release/release/v$version/kubernetes-client-windows-386.tar.gz"
+                "url": "https://dl.k8s.io/release/v$version/kubernetes-client-windows-386.tar.gz"
             }
         },
         "hash": {
