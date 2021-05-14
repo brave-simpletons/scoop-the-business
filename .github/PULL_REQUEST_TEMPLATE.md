@@ -1,9 +1,16 @@
----
-name: Add New Manifest
-about: Adding this new manifest
-title: '%%manifest%% : Add version %%version%%'
----
+
+<!-- If this PR is not about "apps", we recommend that you use this query parameters instead "?expand=1&template=other_work.md" -->
+
 <!-- Replace title placeholders with proper information -->
+<!--
+The "PR Title" should follow something like :
+Action | PR Title example
+-------|-------
+Add    | %%manifest%% : Add version %%version%%
+Update | %%manifest%% : Update %%field-or-section%%
+Remove | %%manifest%% : Remove %%Short_reason%%
+   ... | %%manifest%% : %%Short-explanation%%
+-->
 
 <!--
   For Work In Progress Pull Requests, please use the Draft PR feature,
@@ -18,73 +25,94 @@ title: '%%manifest%% : Add version %%version%%'
   - 📝 Use descriptive commit messages.
 -->
 
+## What type of Apps related PR is this? (check all applicable)
+
+- [ ] ✨ Add Manifest
+- [ ] ♻️ Refactor
+- [ ] 🐛 Bug Fix
+- [ ] 👷 Optimization
+- [ ] 🚩 Other
+
 ## Description
 <!-- Please do not leave this blank -->
 
 ## Related Tickets & Documents
 <!-- Please use this format link issue numbers: Fixes #123 https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword-->
 
-## Did you
+## Did you verify the followings
 
-### Check Hashes?
-<!-- using: `.\bin\checkhashes.ps1 "%%manifest%%.json" -Update` -->
-
-- [ ] 👍 yes
-- [ ] 🙅 no, because they aren't needed
-- [ ] 🙋 no, because I need help
-
-### Check Url?
-<!-- Using: `.\bin\checkurls.ps1 "%%manifest%%.json"` -->
-
-- [ ] 👍 yes
-- [ ] 🙅 no, because they aren't needed
-- [ ] 🙋 no, because I need help
-
-### Check the last version?
-<!-- Using: `.\bin\checkver.ps1 "%%manifest%%.json" -Update` -->
-
-- [ ] 👍 yes
-- [ ] 🙅 no, because they aren't needed
-- [ ] 🙋 no, because I need help
-
-### Added a description in the manifest?
+### Add/Modify a description in the manifest?
 <!-- Using: `.\bin\describe.ps1 "%%manifest%%.json"` -->
 
 - [ ] 👍 yes
+- [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
-- [ ] 🙋 no, because I need help
 
-### Beautified the json manifest format?
+### Check URLs?
+<!-- Using: `.\bin\checkurls.ps1 "%%manifest%%.json"` -->
+
+- [ ] 👍 yes
+- [ ] 🙋 yes, but I need help
+- [ ] 🙅 no, because they aren't needed
+
+### Update to the latest version?
+<!-- Using: `.\bin\checkver.ps1 "%%manifest%%.json" -Update` -->
+
+- [ ] 👍 yes
+- [ ] 🙋 yes, but I need help
+- [ ] 🙅 no, because they aren't needed
+
+### Update Hashes?
+<!-- using: `.\bin\checkhashes.ps1 "%%manifest%%.json" -Update` -->
+
+- [ ] 👍 yes
+- [ ] 🙋 yes, but I need help
+- [ ] 🙅 no, because they aren't needed
+
+### Format the json manifest?
 <!-- Using: `.\bin\formatjson.ps1 "%%manifest%%.json"`-->
 
 - [ ] 👍 yes
+- [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
-- [ ] 🙋 no, because I need help
 
-## Added some notes in the manifest?
+## Did you identify extra steps
 
-- [ ] 👍 yes
-- [ ] 🙅 no, because they aren't needed
-- [ ] 🙋 no, because I need help
-
-## Added/Needed any dependencies?
+### Notes in the manifest?
 
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
 
-## Added/Needed any pre-installation steps to perform?
+### Application Dependencies?
 
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
 
-## Added/Needed any post-installation steps to perform?
+### Application Suggestions?
+
+- [ ] 👍 yes
+- [ ] 🙋 yes, but I need help
+- [ ] 🙅 no, because they aren't needed
+
+### Pre-installation steps to perform?
+
+- [ ] 👍 yes
+- [ ] 🙋 yes, but I need help
+- [ ] 🙅 no, because they aren't needed
+
+### Post-installation steps to perform?
+
+- [ ] 👍 yes
+- [ ] 🙋 yes, but I need help
+- [ ] 🙅 no, because they aren't needed
+
+### File persistence to perform?
 
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
 
 ## [optional] What gif/emoji best describes this PR or how it makes you feel?
-
-<!-- note: PRs with deletes sections will be marked invalid -->
+<!-- Example to get some : https://www.webfx.com/tools/emoji-cheat-sheet/ -->
