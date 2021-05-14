@@ -2,18 +2,18 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Code]
 @="Open with &Code"
-"Icon"="C:\\Users\\alexa\\scoop\\apps\\vscode\\current\\Code.exe"
+"Icon"="$code"
 [HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Code\command]
-@="\"C:\\Users\\alexa\\scoop\\apps\\vscode\\current\\Code.exe\" \"%1\""
+@="\"$code\" \"%1\""
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Code]
 @="Open with &Code"
-"Icon"="C:\\Users\\alexa\\scoop\\apps\\vscode\\current\\Code.exe"
+"Icon"="$code"
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Code\command]
-@="\"C:\\Users\\alexa\\scoop\\apps\\vscode\\current\\Code.exe\" \"%1\""
+@="\"$code\" \"%1\""
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Code]
 @="Open with &Code"
-"Icon"="C:\\Users\\alexa\\scoop\\apps\\vscode\\current\\Code.exe"
+"Icon"="$code"
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Code\command]
-@="\"C:\\Users\\alexa\\scoop\\apps\\vscode\\current\\Code.exe\" \"%V\""
+@="\"$code\" \"%V\""
