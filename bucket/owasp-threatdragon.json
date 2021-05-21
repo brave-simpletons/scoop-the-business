@@ -37,14 +37,14 @@
                 "url": "https://github.com/OWASP/threat-dragon-desktop/releases/download/v$version/OWASP-Threat-Dragon-Setup-$version.exe#/dl.7z",
                 "hash": {
                     "url": "https://github.com/OWASP/threat-dragon-desktop/releases",
-                    "regex": "(?sm)<td>$basename.*<code>$sha256<code>.*</td>"
+                    "regex": "(?sm)<td>$basename.*<code>$sha256</code>.*</td>"
                 }
             },
             "32bit": {
                 "url": "https://github.com/OWASP/threat-dragon-desktop/releases/download/v$version/OWASP-Threat-Dragon-Setup-$version.exe#/dl.7z",
                 "hash": {
                     "url": "https://github.com/OWASP/threat-dragon-desktop/releases",
-                    "regex": "(?sm)<td>$basename.*<code>$sha256<code>.*</td>"
+                    "regex": "(?sm)<td>$basename.*<code>$sha256</code>.*</td>"
                 }
             }
         }
