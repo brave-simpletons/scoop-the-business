@@ -8,7 +8,7 @@
 
 ![logo scoop-the-business](images/scoop-the-business.png)
 
-Another bucket for scoop
+Another bucket for [scoop](https://github.com/lukesampson/scoop)
 
 > :construction:
 >
@@ -16,17 +16,125 @@ Another bucket for scoop
 >
 > :construction:
 
-## How to use our bucket
+## What is Scoop
 
-To use it, only add our bucket into scoop:
+Scoop is a command-line installer for windows and will let you install the tools you know and love
 
-`scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'`
+### What is a "Bucket" for Scoop
+
+A "bucket" is simply a repository of applications that are shared to be known and installed using the Scoop cli
+
+### Does the applications are updated periodically
+
+YES... We use an GitHub actions that execute many times a day to finds all the newest application versions available and updates the bucket.
+
+## Installing Scoop and use our "Bucket"
+
+> :memo:
+>
+> Make sure PowerShell 5 (or later, include PowerShell Core) and .NET Framework 4.5 (or later) are installed
+>
+> :memo:
+
+It's really easy to install and configure Scoop to use our bucket. Just follow the code
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+
+scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'
+```
+
+> :warning:
+> If you do not have 'Git' installed, you will received this error : "Git is required for buckets"
+> The solution is simple, install Git using the next command:
+>
+> ```powershell
+> scoop install git
+> ```
+>
+> And now, you can retry the previous command: `scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'`
+> :warning:
+
+## Using scoop
+
+### Getting help
+
+The help is already included in the CLI
+
+```powershell
+scoop help
+```
+
+For more information, you can also read this [Scoop Guide](https://scoop.netlify.app/)
+
+### Searching an app
+
+Sure, you could search our GitHub repo... But it could be more easier and faster to use the CLI :wink:
+
+```powershell
+# scoop search app-name app-name2 [...]
+scoop search 7zip vscode
+```
+
+### Installing/Uninstall an application
+
+When you know what app to install:
+
+```powershell
+# scoop install app-name app-name2 [...]
+scoop install 7zip vscode
+```
+
+When you know what app to uninstall:
+
+```powershell
+# scoop uninstall app-name app-name2 [...]
+scoop uninstall 7zip vscode
+```
+
+### Updating
+
+Updating scoop itself and the buckets
+
+```powershell
+scoop update
+```
+
+Updating specific application(s)
+
+```powershell
+#scoop update app-name app-name2 [...]
+scoop update 7zip vscode
+```
+
+### Cleaning the old app versions
+
+Since the app can be installed separately, sometimes you could have a lot of version. It could be a good idea to done some cleanup using:
+
+```powershell
+#scoop cleanup app-name app-name2 [...]
+scoop cleanup 7zip vscode
+```
+
+Also you could clean the cache of the downloaded application for a specific app or for all
+
+```powershell
+#scoop cache rm app-name [or *]
+scoop cache rm 7zip
+
+#scoop cache rm *
+```
+
+## What Apps that 'scoop-the-business' suggests
+
+All the app that we use are listed in the folder [bucket](./bucket). If one is missing do not hesitate to contribute or ask us and... we will do it when we will find the time :smile:
 
 ## Contributing
 
-Follow [How to Contribute](.github/CONTRIBUTING.md) page
+You think something is missing here ? Follow [How to Contribute](.github/CONTRIBUTING.md) page and submit your PR :wink:
 
-## References used to start this project
+## References used for this project
 
 - Proposed template : [GenericBucket](https://github.com/Ash258/GenericBucket)
 - Automation : [Scoop-Ash258](https://github.com/Ash258/Scoop-Ash258)
