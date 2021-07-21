@@ -1,12 +1,12 @@
 {
     "##": "Check chromium.woolyss.com for different versions of Chromium releases.",
-    "version": "91.0.4472.164",
+    "version": "92.0.4515.107",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web.",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/macchrome/winchrome/releases/download/v91.0.4472.164-r870763-Win64/ungoogled-chromium-91.0.4472.164-1_Win64.7z",
-    "hash": "sha1:f38cae109552183bcfc92402bdc976264c886144",
-    "extract_dir": "ungoogled-chromium-91.0.4472.164-1_Win64",
+    "url": "https://github.com/macchrome/winchrome/releases/download/v92.0.4515.107-r885287-Win64/ungoogled-chromium-92.0.4515.107-1_Win64.7z",
+    "hash": "sha1:b35e97e457db2e4d5402518142973e8d798756b3",
+    "extract_dir": "ungoogled-chromium-92.0.4515.107-1_Win64",
     "bin": [
         "chrome.exe",
         [
