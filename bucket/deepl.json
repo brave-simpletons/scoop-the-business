@@ -1,5 +1,5 @@
 {
-    "version": "2.7.11979",
+    "version": "2.7.22108",
     "description": "The free DeepL Translator help translate your texts with the best machine translation available online",
     "homepage": "https://www.deepl.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.deepl.com/windows/download/x64/2_7_11979/DeepL-2.7.11979-full.nupkg",
-            "hash": "sha1:177a1e2cdf15038fe0bcc78593f01fd999eba997"
+            "url": "https://www.deepl.com/windows/download/x64/2_7_22108/DeepL-2.7.22108-full.nupkg",
+            "hash": "sha1:3f827078d22d7b4126da9091ff722567a2655c4f"
         }
     },
     "pre_install": [
