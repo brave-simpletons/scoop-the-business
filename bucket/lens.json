@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://api.k8slens.dev/binaries/Lens Setup 5.2.2-latest.20210917.1.exe#/dl.7z",
-            "hash": "893be8eb2f7e24037a938fff9e3cafd0fbb1d78f552817a65bc35e7829435b95",
+            "hash": "sha512:2dcd2d0521fa2759a0e130829679208ed1f98bae80f631d7911a1cc976762c2de838ddf8b46c409f60c9c5a75b2403a05a555f3f059b5fa15372efa53bd562bd",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
@@ -29,7 +29,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://api.k8slens.dev/binaries/Lens Setup $version.exe#/dl.7z"
+                "url": "https://api.k8slens.dev/binaries/Lens Setup $version.exe#/dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.json",
+                    "regex": "\"sha512\":\\s*\"$base64\""
+                }
             }
         }
     }
