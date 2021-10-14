@@ -26,7 +26,7 @@
         "url": "https://github.com/zaproxy/zaproxy/releases/download/v$version/ZAP_$underscoreVersion_windows.exe#/dl.7z",
         "hash": {
             "url": "https://github.com/zaproxy/zaproxy/releases/tag/v$version",
-            "regex": "(?smi)<td><a href=\"$url\">$basename</a></td><td><code>$sha256</code></td>"
+            "regex": "$basename</a></td><td><code>$sha256</code></td>"
         }
     }
 }
