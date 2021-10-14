@@ -1,0 +1,32 @@
+{
+    "version": "2.11.0",
+    "description": "Integrated penetration testing tool for finding vulnerabilities in web applications",
+    "homepage": "https://www.zaproxy.org",
+    "license": "Apache-2.0",
+    "suggest": {
+        "JRE": "java/adopt8-hotspot-jre"
+    },
+    "url": "https://github.com/zaproxy/zaproxy/releases/download/v2.11.0/ZAP_2_11_0_windows.exe#/dl.7z",
+    "hash": "b2bcf2b7ca7d1bdcc78aa72003d8c1e071bc65677c10e87ad4886de90a42e1f8",
+    "pre_install": "(Get-Content \"$dir\\zap.bat\") -replace \"\\s+(zap-$version\\.jar)\", ' %~dp0$1' | Out-File \"$dir\\zap.bat\" -Encoding Ascii",
+    "bin": "zap.bat",
+    "shortcuts": [
+        [
+            "zap.bat",
+            "OWASP Zed Attack Proxy",
+            "",
+            "zap.ico"
+        ]
+    ],
+    "persist": "plugin",
+    "checkver": {
+        "github": "https://github.com/zaproxy/zaproxy"
+    },
+    "autoupdate": {
+        "url": "https://github.com/zaproxy/zaproxy/releases/download/v$version/ZAP_$underscoreVersion_windows.exe#/dl.7z",
+        "hash": {
+            "url": "https://github.com/zaproxy/zaproxy/releases/tag/v$version",
+            "regex": "(?smi)<td><a href=\"$url\">$basename</a></td><td><code>$sha256</code></td>"
+        }
+    }
+}
