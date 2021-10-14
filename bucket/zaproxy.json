@@ -23,9 +23,6 @@
         "github": "https://github.com/zaproxy/zaproxy"
     },
     "autoupdate": {
-        "url": "https://github.com/zaproxy/zaproxy/releases/download/v$version/ZAP_$underscoreVersion_windows.exe#/dl.7z",
-        "hash": {
-            "url": "https://github.com/zaproxy/zaproxy/releases"
-        }
+        "url": "https://github.com/zaproxy/zaproxy/releases/download/v$version/ZAP_$underscoreVersion_windows.exe#/dl.7z"
     }
 }
