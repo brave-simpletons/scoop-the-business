@@ -1,12 +1,12 @@
 {
-    "version": "1.11.4",
+    "version": "1.12.0",
     "description": "istioctl is a supplemental tool that provides debugging and diagnosis for Istio service mesh deployments.",
     "homepage": "https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/istio/istio/releases/download/1.11.4/istioctl-1.11.4-win.zip",
-            "hash": "69e279179fa12af099900e713fa42dac30f33dca8375ea06fedc5eb2285627b4"
+            "url": "https://github.com/istio/istio/releases/download/1.12.0/istioctl-1.12.0-win.zip",
+            "hash": "ecc6dcbf2b53f893f42b15a473632792924114a8edf8e8fa5a35b0d8b869193c"
         }
     },
     "bin": "istioctl.exe",
