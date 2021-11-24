@@ -40,37 +40,38 @@ Remove | %%manifest%% : Remove %%Short_reason%%
 <!-- Please use this format link issue numbers: Fixes #123 https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword-->
 
 ## Did you verify the followings
+<!-- Prepare each script to validate Using: `$manifest = "manifest-name"` -->
 
 ### Add/Modify a description in the manifest?
-<!-- Using: `.\bin\describe.ps1 "%%manifest%%.json"` -->
+<!-- Using: `.\bin\describe.ps1 $manifest` -->
 
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
 
 ### Check URLs?
-<!-- Using: `.\bin\checkurls.ps1 "%%manifest%%.json"` -->
+<!-- Using: `.\bin\checkurls.ps1 $manifest` -->
 
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
 
 ### Update to the latest version?
-<!-- Using: `.\bin\checkver.ps1 "%%manifest%%.json" -Update` -->
+<!-- Using: `.\bin\checkver.ps1 $manifest -Update` -->
 
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
 
 ### Update Hashes?
-<!-- using: `.\bin\checkhashes.ps1 "%%manifest%%.json" -Update` -->
+<!-- using: `.\bin\checkhashes.ps1 $manifest -Update` -->
 
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
 
 ### Format the json manifest?
-<!-- Using: `.\bin\formatjson.ps1 "%%manifest%%.json"`-->
+<!-- Using: `.\bin\formatjson.ps1 $manifest`-->
 
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
