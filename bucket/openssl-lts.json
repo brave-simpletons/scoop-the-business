@@ -1,0 +1,46 @@
+{
+    "version": "1_1_1L",
+    "description": "TLS/SSL toolkit",
+    "homepage": "https://slproweb.com/products/Win32OpenSSL.html",
+    "license": {
+        "identifier": "OpenSSL|Freeware",
+        "url": "https://www.openssl.org/source/license-openssl-ssleay.txt"
+    },
+    "notes": [
+        "This manifest target the LTS release of OpenSSL.",
+        "Currently v1.1.1L"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://slproweb.com/download/Win64OpenSSL-1_1_1L.exe",
+            "hash": "3ebae8cc528de25a2a770b08acbca7fec38756ec2be6f3905a30a6c482549600"
+        },
+        "32bit": {
+            "url": "https://slproweb.com/download/Win32OpenSSL-1_1_1L.exe",
+            "hash": "75bce53d45f005c53cebaa68cdc46aa51279bb4f93ecc54987716e48066c14e8"
+        }
+    },
+    "innosetup": true,
+    "bin": "bin\\openssl.exe",
+    "env_add_path": "bin",
+    "env_set": {
+        "OPENSSL_CONF": "$dir\\bin\\cnf\\openssl.cnf",
+        "OPENSSL_LIB_DIR": "$dir\\lib",
+        "OPENSSL_INCLUDE_DIR": "$dir\\include"
+    },
+    "checkver": "(1_\\d_\\d.)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://slproweb.com/download/Win64OpenSSL-$underscoreVersion.exe"
+            },
+            "32bit": {
+                "url": "https://slproweb.com/download/Win32OpenSSL-$underscoreVersion.exe"
+            }
+        },
+        "hash": {
+            "url": "https://raw.githubusercontent.com/slproweb/opensslhashes/master/win32_openssl_hashes.json",
+            "jsonpath": "$.files.['$basename'].sha256"
+        }
+    }
+}
