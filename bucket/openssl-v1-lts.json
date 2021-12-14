@@ -1,5 +1,5 @@
 {
-    "version": "1.1.1L",
+    "version": "1_1_1L",
     "description": "TLS/SSL toolkit",
     "homepage": "https://slproweb.com/products/Win32OpenSSL.html",
     "license": {
@@ -24,7 +24,7 @@
         "OPENSSL_LIB_DIR": "$dir\\lib",
         "OPENSSL_INCLUDE_DIR": "$dir\\include"
     },
-    "checkver": "Win32 OpenSSL v([^\\s]+)",
+    "checkver": "(1_\\d_\\d.)",
     "autoupdate": {
         "architecture": {
             "64bit": {
