@@ -6,6 +6,9 @@
         "identifier": "OpenSSL|Freeware",
         "url": "https://www.openssl.org/source/license-openssl-ssleay.txt"
     },
+    "notes": [
+        "This manifest target exclusively the v1.x release of OpenSSL"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://slproweb.com/download/Win64OpenSSL-1_1_1L.exe",
