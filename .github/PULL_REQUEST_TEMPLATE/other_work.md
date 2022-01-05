@@ -43,4 +43,5 @@
 - [ ] 🙅 no documentation needed
 
 ## [optional] What gif/emoji best describes this PR or how it makes you feel?
-<!-- Example to get some : https://www.webfx.com/tools/emoji-cheat-sheet/ -->
+<!-- You can choose the best that suits you (because YOLO!) : https://www.webfx.com/tools/emoji-cheat-sheet/ -->
+<!-- You can use the ones proposed : https://gitmoji.dev/ -->
