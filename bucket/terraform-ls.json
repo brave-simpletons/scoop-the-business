@@ -1,5 +1,5 @@
 {
-    "version": "0.25.1",
+    "version": "0.25.2",
     "description": "Terraform Language Server",
     "homepage": "https://github.com/hashicorp/terraform-ls",
     "license": "MPL-2.0",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hashicorp/terraform-ls/releases/download/v0.25.1/terraform-ls_0.25.1_windows_amd64.zip",
-            "hash": "77f8adf0b52076ea6c41cd81886f1d22cf6416f7d7042cb7b4533fe8a94b08b2"
+            "url": "https://github.com/hashicorp/terraform-ls/releases/download/v0.25.2/terraform-ls_0.25.2_windows_amd64.zip",
+            "hash": "2b1d234c6b6dc0185c7cf16b57737e6093baab49e28f5c322b159f65b9abcbed"
         },
         "32bit": {
-            "url": "https://github.com/hashicorp/terraform-ls/releases/download/v0.25.1/terraform-ls_0.25.1_windows_386.zip",
-            "hash": "3e710bceaaf2fb31d68a1a5c45c15bb0978fba7773f5cad1c5fea8ad5bece49c"
+            "url": "https://github.com/hashicorp/terraform-ls/releases/download/v0.25.2/terraform-ls_0.25.2_windows_386.zip",
+            "hash": "971914c3b91097f07e398c108e98bdf38f9f421b6b5ab509d2504136fe12be70"
         }
     },
     "bin": "terraform-ls.exe",
