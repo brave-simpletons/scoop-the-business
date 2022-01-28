@@ -1,0 +1,36 @@
+{
+    "version": "1.0.1.0",
+    "description": "A Swiss Army knife for developers.",
+    "homepage": "https://devtoys.app",
+    "license": "MIT",
+    "url": "https://github.com/veler/DevToys/releases/download/v1.0.1.0/DevToys.Startup_1.0.1.0_x86_x64_arm64.msixbundle#/dl.7z",
+    "hash": "10984c185f7ac313e6694fa1b9ba2ba3a40b29ab7632f1f8567186d9d8c40b77",
+    "architecture": {
+        "64bit": {
+            "pre_install": "Get-ChildItem \"$dir\" -Exclude '*x64.msix' | Remove-Item -Force -Recurse"
+        },
+        "32bit": {
+            "pre_install": "Get-ChildItem \"$dir\" -Exclude '*x86.msix' | Remove-Item -Force -Recurse"
+        }
+    },
+    "installer": {
+        "script": [
+            "$winVer = [Environment]::OSVersion.Version",
+            "if (($winver.Major -lt '10') -or ($winVer.Build -lt 19041)) { throw 'At least Windows 10 19041 is required.' }",
+            "Get-ChildItem \"$dir\" '*.msix' | Select-Object -ExpandProperty Fullname | Expand-7zipArchive -DestinationPath \"$dir\" -Removal"
+        ]
+    },
+    "bin": "DevToys.exe",
+    "shortcuts": [
+        [
+            "DevToys.exe",
+            "DevToys"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/veler/DevToys"
+    },
+    "autoupdate": {
+        "url": "https://github.com/veler/DevToys/releases/download/v$version/DevToys.Startup_$version_x86_x64_arm64.msixbundle#/dl.7z"
+    }
+}
