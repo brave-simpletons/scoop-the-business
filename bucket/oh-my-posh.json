@@ -1,13 +1,17 @@
 {
-    "version": "6.8.0",
+    "version": "7.10.1",
     "description": "A prompt theme engine for any shell",
     "homepage": "https://ohmyposh.dev",
     "license": "GPL-3.0-only",
-    "notes": "Refer to 'https://ohmyposh.dev/docs/pwsh' for shell specific configurations.",
+    "notes": [
+        "While Oh My Posh works on the standard terminal, we advise using the Windows Terminal.",
+        "Follow the instructions to setup your terminal : 'https://ohmyposh.dev/docs/windows#setup-your-terminal'",
+        "Refer to 'https://ohmyposh.dev/docs/windows#replace-your-existing-prompt' for shell specific configurations."
+    ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v6.8.0/posh-windows-wsl-amd64.7z",
-            "hash": "ac653de6f751231de53649e3dab83a145e1f728df5767e0619f63b7c19da9caf"
+            "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v7.10.1/posh-windows-amd64.7z",
+            "hash": "a62e5852ecd7048aef44c5a86be6cafcb7713eb65405685d9c1e1e3965054034"
         }
     },
     "bin": "bin\\oh-my-posh.exe",
@@ -18,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v$version/posh-windows-wsl-amd64.7z"
+                "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v$version/posh-windows-amd64.7z"
             }
         },
         "hash": {
