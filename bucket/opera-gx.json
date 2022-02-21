@@ -6,7 +6,6 @@
         "identifier": "Freeware",
         "url": "https://www.opera.com/eula/computers"
     },
-    "notes": "Enable Opera to be discoverable from Windows to be the default browser by running: \"$dir\\install-context.reg\"",
     "architecture": {
         "64bit": {
             "url": "https://download3.operacdn.com/pub/opera_gx/83.0.4254.66/win/Opera_GX_83.0.4254.66_Setup_x64.exe#/dl.7z",
