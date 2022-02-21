@@ -1,0 +1,71 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
+"Opera GX Stable"="Software\\Clients\\StartMenuInternet\\Opera GXStable\\Capabilities"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable]
+"FriendlyTypeName"="Opera GX Web Document"
+"URL Protocol"=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\DefaultIcon]
+@="$operagx_root\\Launcher.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell\open\command]
+@="\"$operagx_root\\Launcher.exe\" -noautoupdate -- \"%1\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell\open\ddeexec]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell\open\ddeexec\Application]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell\open\ddeexec\Topic]
+@=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable]
+@="Opera GX Stable"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\Capabilities]
+"ApplicationDescription"="Do more on the web"
+"ApplicationIcon"="\"$operagx_root\\Launcher.exe\",0"
+"ApplicationName"="Opera GX Stable"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\Capabilities\FileAssociations]
+".crx"="Opera GXStable"
+".gxanimations"="Opera GXStable"
+".htm"="Opera GXStable"
+".html"="Opera GXStable"
+".opdownload"="Opera GXStable"
+".pdf"="Opera GXStable"
+".shtml"="Opera GXStable"
+".xht"="Opera GXStable"
+".xhtml"="Opera GXStable"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\Capabilities\Startmenu]
+"StartMenuInternet"="Opera GXStable"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\Capabilities\UrlAssociations]
+"http"="Opera GXStable"
+"https"="Opera GXStable"
+"ftp"="Opera GXStable"
+"mailto"="Opera GXStable"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\DefaultIcon]
+@="$operagx_root\\Launcher.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\InstallInfo]
+"ShowIconsCommand"="\"$operagx_root\\Launcher.exe\" --showicons"
+"HideIconsCommand"="\"$operagx_root\\Launcher.exe\" --hideicons"
+"ReinstallCommand"="\"$operagx_root\\Launcher.exe\" --makedefaultbrowser"
+"IconsVisible"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\shell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\shell\open\command]
+@="\"$operagx_root\\Launcher.exe\""

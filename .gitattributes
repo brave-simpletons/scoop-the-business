@@ -1,3 +1,6 @@
 # retain windows line-endings in case checked out on mac or linux
 * text eol=crlf
 .git/hooks/* text eol=lf
+
+# force encoding
+*.reg text working-tree-encoding=UTF-16

@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
+"Opera GX Stable"=-
+
+[-HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable]
+[-HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable]
