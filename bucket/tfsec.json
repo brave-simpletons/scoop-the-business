@@ -1,12 +1,12 @@
 {
-    "version": "1.15.3",
+    "version": "1.15.4",
     "description": "A static analysis security scanner for Terraform code",
     "homepage": "https://github.com/aquasecurity/tfsec",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aquasecurity/tfsec/releases/download/v1.15.3/tfsec-windows-amd64.exe#/tfsec.exe",
-            "hash": "1115874b835388b4c9469926b0c5461cb5c59847834ce5b778fa3e914ea91641"
+            "url": "https://github.com/aquasecurity/tfsec/releases/download/v1.15.4/tfsec-windows-amd64.exe#/tfsec.exe",
+            "hash": "59435234dee9a907a91cd30272e56e42e10d6b7844bc60b7a91824afd7e62b7d"
         }
     },
     "bin": "tfsec.exe",
