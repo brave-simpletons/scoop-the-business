@@ -1,5 +1,5 @@
 {
-    "version": "0.2.0",
+    "version": "0.1.1",
     "description": "Terraform graph beautifier",
     "homepage": "https://github.com/pcasteran/terraform-graph-beautifier",
     "license": "Apache-2.0",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pcasteran/terraform-graph-beautifier/releases/download/v0.2.0/terraform-graph-beautifier_0.2.0_Windows_x86_64.tar.gz",
-            "hash": "983587451847f2b8339644d0405514aeb0f701e152788bb1a83321eade82ab1f"
+            "url": "https://github.com/pcasteran/terraform-graph-beautifier/releases/download/v0.1.1/terraform-graph-beautifier_0.1.1_Windows_x86_64.tar.gz",
+            "hash": "ee71ab5a7f2c2eadc8543ac0dfe4ebc2d62ac42f1942d01eee489489d74f4668"
         }
     },
     "bin": "terraform-graph-beautifier.exe",
