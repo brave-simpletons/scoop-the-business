@@ -3,6 +3,14 @@
     "description": "A tool to bring existing Azure resources under Terraform's management",
     "homepage": "https://github.com/Azure/aztfy",
     "license": "MPL-2.0",
+    "suggests": [
+        "go",
+        "terraform",
+        "terraform-ls",
+        "terraform-docs",
+        "terraform-graph-beautifier",
+        "tfsec"
+    ],
     "architecture": {
         "32bit": {
             "url": "https://github.com/Azure/aztfy/releases/download/v0.1.1/aztfy_v0.1.1_windows_386.zip",
