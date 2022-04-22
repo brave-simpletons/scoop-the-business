@@ -1,5 +1,5 @@
 {
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "A tool to bring existing Azure resources under Terraform's management",
     "homepage": "https://github.com/Azure/aztfy",
     "license": "MPL-2.0",
@@ -13,12 +13,12 @@
     ],
     "architecture": {
         "32bit": {
-            "url": "https://github.com/Azure/aztfy/releases/download/v0.1.1/aztfy_v0.1.1_windows_386.zip",
-            "hash": "f8a271f14454e2665bb176109feb756f153e46b9d4c6a90d7beb48e75ee5cc7f"
+            "url": "https://github.com/Azure/aztfy/releases/download/v0.2.0/aztfy_v0.2.0_windows_386.zip",
+            "hash": "8308fba9ae1bab2281e8470d591ca40dea150abd1152a8d2a3f76986a4f74ce4"
         },
         "64bit": {
-            "url": "https://github.com/Azure/aztfy/releases/download/v0.1.1/aztfy_v0.1.1_windows_amd64.zip",
-            "hash": "7acd0caeb1ab3a54160b5d7176cb30d3796179bd3845d7954546513e843171a4"
+            "url": "https://github.com/Azure/aztfy/releases/download/v0.2.0/aztfy_v0.2.0_windows_amd64.zip",
+            "hash": "6b55b2bfeda4709641c44cbbdf23bbed0bdbf06cbee892323cb87fedeb8700ea"
         }
     },
     "bin": "aztfy.exe",
