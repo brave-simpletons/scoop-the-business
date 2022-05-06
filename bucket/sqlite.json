@@ -1,11 +1,11 @@
 {
-    "version": "3.38.4",
+    "version": "3.38.5",
     "description": "A small, fast, self-contained, high-reliability and full-featured SQL database engine",
     "homepage": "https://www.sqlite.org/",
     "license": "Public Domain",
-    "url": "https://www.sqlite.org/2022/sqlite-tools-win32-x86-3380400.zip",
-    "hash": "7d9fa965acd1a1962166142a9e4778b33c4392131df45e9dc9c215abea9610d8",
-    "extract_dir": "sqlite-tools-win32-x86-3380400",
+    "url": "https://www.sqlite.org/2022/sqlite-tools-win32-x86-3380500.zip",
+    "hash": "0390d853a8117d592371ace3cd0c77f1b793583a12cd12b828e698be33d2d08f",
+    "extract_dir": "sqlite-tools-win32-x86-3380500",
     "bin": [
         "sqlite3.exe",
         "sqldiff.exe",
