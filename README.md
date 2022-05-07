@@ -36,25 +36,21 @@ YES... We use an GitHub actions that execute many times a day to finds all the n
 >
 > :memo:
 
-It's really easy to install and configure Scoop to use our bucket. Just follow the code
+It's really easy to install and configure Scoop to use our bucket. Just follow the code (or save it in a .ps1 file & execute it):
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
+scoop install git
+
+$fileGitConfig = $env:userprofile\.gitconfig
+if (-not(Test-Path -Path $fileGitConfig -PathType Leaf)) {
+    Invoke-WebRequest 'https://raw.githubusercontent.com/brave-simpletons/tooling-for-developers/main/git/gitconfig.txt' -OutFile $fileGitConfig
+}
+
 scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'
 ```
-
-> :warning:
-> If you do not have 'Git' installed, you will received this error : "Git is required for buckets"
-> The solution is simple, install Git using the next command:
->
-> ```powershell
-> scoop install git
-> ```
->
-> And now, you can retry the previous command: `scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'`
-> :warning:
 
 ## Using scoop
 
@@ -101,30 +97,57 @@ Updating scoop itself and the buckets
 scoop update
 ```
 
-Updating specific application(s)
+Afterward, it will be possible to know if updates exists for one of the application installed using:
 
 ```powershell
-#scoop update app-name app-name2 [...]
-scoop update 7zip vscode
+scoop status
 ```
+Then you will be able to decide if you update all applications or only specific ones using one of the following:
+
+- Update all applications
+
+   ```powershell
+   scoop update *
+   ```
+
+- Updating specific application(s)
+
+   ```powershell
+   #scoop update app-name app-name2 [...]
+   scoop update 7zip vscode
+   ```
 
 ### Cleaning the old app versions
 
 Since the app can be installed separately, sometimes you could have a lot of version. It could be a good idea to done some cleanup using:
 
-```powershell
-#scoop cleanup app-name app-name2 [...]
-scoop cleanup 7zip vscode
-```
+- Cleaning all applications
+
+   ```powershell
+   scoop cleanup *
+   ```
+   
+- Cleaning specific application(s)
+
+   ```powershell
+   #scoop cleanup app-name app-name2 [...]
+   scoop cleanup 7zip vscode
+   ```
 
 Also you could clean the cache of the downloaded application for a specific app or for all
 
-```powershell
-#scoop cache rm app-name [or *]
-scoop cache rm 7zip
+- Removing all applications from the cache
 
-#scoop cache rm *
-```
+   ```powershell
+   scoop cache rm *
+   ```
+
+- Removing specific application from the cache
+
+   ```powershell
+   #scoop cache rm app-name
+   scoop cache rm 7zip
+   ```
 
 ## What Apps that 'scoop-the-business' suggests
 
