@@ -36,25 +36,21 @@ YES... We use an GitHub actions that execute many times a day to finds all the n
 >
 > :memo:
 
-It's really easy to install and configure Scoop to use our bucket. Just follow the code
+It's really easy to install and configure Scoop to use our bucket. Just follow the code (or save it in a .ps1 file & execute it):
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
+scoop install git
+
+$fileGitConfig = $env:userprofile\.gitconfig
+if (-not(Test-Path -Path $fileGitConfig -PathType Leaf)) {
+    Invoke-WebRequest 'https://raw.githubusercontent.com/brave-simpletons/tooling-for-developers/main/git/gitconfig.txt' -OutFile $env:userprofile\.gitconfig
+}
+
 scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'
 ```
-
-> :warning:
-> If you do not have 'Git' installed, you will received this error : "Git is required for buckets"
-> The solution is simple, install Git using the next command:
->
-> ```powershell
-> scoop install git
-> ```
->
-> And now, you can retry the previous command: `scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'`
-> :warning:
 
 ## Using scoop
 
@@ -101,6 +97,11 @@ Updating scoop itself and the buckets
 scoop update
 ```
 
+Update all applications
+```powershell
+scoop update *
+```
+
 Updating specific application(s)
 
 ```powershell
@@ -115,6 +116,8 @@ Since the app can be installed separately, sometimes you could have a lot of ver
 ```powershell
 #scoop cleanup app-name app-name2 [...]
 scoop cleanup 7zip vscode
+
+#scoop cleanup *
 ```
 
 Also you could clean the cache of the downloaded application for a specific app or for all
