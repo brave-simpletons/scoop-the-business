@@ -1,16 +1,16 @@
 {
-    "version": "0.4.3",
+    "version": "0.4.5",
     "description": "Container Image Linter for Security, Helping build the Best-Practice Docker Image",
     "homepage": "https://github.com/goodwithtech/dockle",
     "license": "Apache-2.0",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/goodwithtech/dockle/releases/download/v0.4.3/dockle_0.4.3_Windows-32bit.zip",
-            "hash": "70e830f7e8c73787618c7d3f638603326e6735ca90ac49d191621554e3289e33"
+            "url": "https://github.com/goodwithtech/dockle/releases/download/v0.4.5/dockle_0.4.5_Windows-32bit.zip",
+            "hash": "355d2b7dd99b47317a32506923110e6a6ae25d3ca90cf7e5f0ca1939cf099a8b"
         },
         "64bit": {
-            "url": "https://github.com/goodwithtech/dockle/releases/download/v0.4.3/dockle_0.4.3_Windows-64bit.zip",
-            "hash": "53ffc9a6060ff874991552fd0f251256e87603f26f7e673e9a2e7102bb51e434"
+            "url": "https://github.com/goodwithtech/dockle/releases/download/v0.4.5/dockle_0.4.5_Windows-64bit.zip",
+            "hash": "2830c427430a22ff95ad479b7364507cf19458b9b627729b5b477899541e8e80"
         }
     },
     "bin": "dockle.exe",
