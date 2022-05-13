@@ -1,12 +1,12 @@
 {
-    "version": "0.2.6",
+    "version": "0.3.0",
     "description": "KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts.",
     "homepage": "https://github.com/stackrox/kube-linter",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stackrox/kube-linter/releases/download/0.2.6/kube-linter-windows.zip",
-            "hash": "fc59b250c4329be61d26b3016f7c14764195b902067cd1b851034fdf8216957f"
+            "url": "https://github.com/stackrox/kube-linter/releases/download/0.3.0/kube-linter-windows.zip",
+            "hash": "5469006d0aeb435d21986c7dc088681128bb9f804c8d0a15cc37f60a44ff62ca"
         }
     },
     "bin": "kube-linter.exe",
