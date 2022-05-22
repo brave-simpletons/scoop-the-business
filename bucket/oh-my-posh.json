@@ -1,5 +1,5 @@
 {
-    "version": "7.88.0",
+    "version": "7.88.1",
     "description": "A prompt theme engine for any shell",
     "homepage": "https://ohmyposh.dev",
     "license": "GPL-3.0-only",
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v7.88.0/posh-windows-amd64.7z",
-            "hash": "b5e0e13add7e882e3d1c8f1a8b1892a49105108da8508366265ff9da2e3e8cb7"
+            "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v7.88.1/posh-windows-amd64.7z",
+            "hash": "be6599db88c283fd1c3645ca877d9e1ec199b8948ccb49cf1833a66c1b12272c"
         }
     },
     "bin": "bin\\oh-my-posh.exe",
