@@ -1,5 +1,5 @@
 {
-    "version": "1.70.0-insider",
+    "version": "1.71.0-insider",
     "description": "Visual Studio Code is a lightweight but powerful source code editor (Insiders Edition).",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -10,24 +10,24 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://az764295.vo.msecnd.net/insider/3104db414c8fedcf6e4493f14da7df0b7413853a/VSCode-win32-x64-1.70.0-insider.zip",
+                "https://az764295.vo.msecnd.net/insider/73fd3f11032e7b83c2ae011b5516e6ddd19e3db2/VSCode-win32-x64-1.71.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode-install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode-uninstall-context.reg"
             ],
             "hash": [
-                "3265dfa28d1ebc04fdae8ad0f76e078ef16f65efbddbbcc166aa0048142858e2",
+                "4cc3ecebf00025b88740d22688775e08bffe8fdbc68c8650dcddddf7bea56157",
                 "b65d66860d9ccc18bfb05237b03e06db0d6c574be3d4b946c2a5e6865c08cb28",
                 "df2a5162e72e2518e2b75b4337c8e7b46c136554872af90fa0de1cf6ebef376f"
             ]
         },
         "32bit": {
             "url": [
-                "https://az764295.vo.msecnd.net/insider/3104db414c8fedcf6e4493f14da7df0b7413853a/VSCode-win32-ia32-1.70.0-insider.zip",
+                "https://az764295.vo.msecnd.net/insider/73fd3f11032e7b83c2ae011b5516e6ddd19e3db2/VSCode-win32-ia32-1.71.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode-install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode-uninstall-context.reg"
             ],
             "hash": [
-                "c9a3867d335b45afba4e4196bbfa00f2a8654514e5315cfcf3e93e5bff21cab8",
+                "656989ffb61a8a9852f776cd136b9377ddd556693d99b2d55cc376b8c53d1074",
                 "b65d66860d9ccc18bfb05237b03e06db0d6c574be3d4b946c2a5e6865c08cb28",
                 "df2a5162e72e2518e2b75b4337c8e7b46c136554872af90fa0de1cf6ebef376f"
             ]
