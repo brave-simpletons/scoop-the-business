@@ -1,18 +1,17 @@
 {
-    "version": "8.29.0",
+    "version": "8.29.5",
     "description": "A prompt theme engine for any shell",
     "homepage": "https://ohmyposh.dev",
-    "license": "GPL-3.0-only",
-    "notes": [
-        "While Oh My Posh works on the standard terminal, we advise using the Windows Terminal.",
-        "Follow the instructions to setup your terminal : 'https://ohmyposh.dev/docs/windows#setup-your-terminal'",
-        "Refer to 'https://ohmyposh.dev/docs/windows#replace-your-existing-prompt' for shell specific configurations."
-    ],
+    "license": "MIT",
+    "notes": "Refer to 'https://ohmyposh.dev/docs/installation/prompt' for shell specific configurations.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v8.29.0/posh-windows-amd64.7z",
-            "hash": "0094732edd8aac2ae36ae0acb4fec57423d1c3e0e5afd7dcb5aba4e837d4c01a"
+            "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v8.29.5/posh-windows-amd64.7z",
+            "hash": "abb3b91971385127e151c13c8cb7e71b73be2e80b10cfaec6d6c1e57ab3fc60e"
         }
+    },
+    "env_set": {
+        "POSH_THEMES_PATH": "$dir\\themes"
     },
     "bin": "bin\\oh-my-posh.exe",
     "persist": "themes",
@@ -26,8 +25,7 @@
             }
         },
         "hash": {
-            "url": "$url.sha256",
-            "regex": "$sha256"
+            "url": "$url.sha256"
         }
     }
 }
