@@ -1,5 +1,5 @@
 {
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "DAX Studio is a tool to write, execute, and analyze DAX queries in Power BI Desktop, Power Pivot for Excel, and Analysis Services Tabular.",
     "homepage": "https://daxstudio.org/",
     "notes": [
@@ -18,8 +18,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/DaxStudio/DaxStudio/releases/download/v3.0.0/DaxStudio_3_0_0_portable.zip",
-            "hash": "2c3b3e370cf360f2a7f39da93989300dbe6871ec81d46599f277b19bd91f3a48"
+            "url": "https://github.com/DaxStudio/DaxStudio/releases/download/v3.0.1/DaxStudio_3_0_1_portable.zip",
+            "hash": "678683f8ab1a9768c396068ef9368d9eb3f50820a6b36caf78a69d62ebce853a"
         }
     },
     "shortcuts": [
