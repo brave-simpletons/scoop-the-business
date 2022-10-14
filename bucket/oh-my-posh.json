@@ -1,13 +1,13 @@
 {
-    "version": "12.2.1",
+    "version": "12.2.2",
     "description": "A prompt theme engine for any shell",
     "homepage": "https://ohmyposh.dev",
     "license": "MIT",
     "notes": "Refer to 'https://ohmyposh.dev/docs/installation/prompt' for shell specific configurations.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v12.2.1/posh-windows-amd64.7z",
-            "hash": "0b6c5b3722de30e464c966e2d8b450cf6072c82f6c4f293cf515f2472e34a95b"
+            "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v12.2.2/posh-windows-amd64.7z",
+            "hash": "d5adcce8295f6bccad901291052c8523ac1ca66a22456d52905f65be19f41426"
         }
     },
     "env_set": {
