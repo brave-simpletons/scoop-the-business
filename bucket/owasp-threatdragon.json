@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/OWASP/threat-dragon-desktop/releases/download/v1.4.0/OWASP-Threat-Dragon-Setup-1.4.0.exe#/dl.7z",
-            "hash": "ab22258c4e175b09d9628fac7f7330b9559d34145069d57f135c1055a416036c",
+            "hash": "3c63889cd671fe886d1393e36e898c38089769ef5aaa5b0b294f7abe0342aadd",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Recurse"
@@ -14,7 +14,7 @@
         },
         "32bit": {
             "url": "https://github.com/OWASP/threat-dragon-desktop/releases/download/v1.4.0/OWASP-Threat-Dragon-Setup-1.4.0.exe#/dl.7z",
-            "hash": "ab22258c4e175b09d9628fac7f7330b9559d34145069d57f135c1055a416036c",
+            "hash": "3c63889cd671fe886d1393e36e898c38089769ef5aaa5b0b294f7abe0342aadd",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Recurse"
