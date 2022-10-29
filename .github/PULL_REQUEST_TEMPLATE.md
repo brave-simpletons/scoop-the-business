@@ -39,6 +39,10 @@ Remove | %%manifest%% : Remove %%Short_reason%%
 ## Related Tickets & Documents
 <!-- Please use this format link issue numbers: Fixes #123 https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword-->
 
+## [optional] What gif/emoji best describes this PR or how it makes you feel?
+<!-- You can choose the best that suits you (because YOLO!) : https://www.webfx.com/tools/emoji-cheat-sheet/ -->
+<!-- You can use the ones proposed : https://gitmoji.dev/ -->
+
 ## Did you verify the followings
 <!-- Prepare each script to validate Using: `$manifest = "manifest-name"` -->
 
@@ -114,7 +118,3 @@ Remove | %%manifest%% : Remove %%Short_reason%%
 - [ ] 👍 yes
 - [ ] 🙋 yes, but I need help
 - [ ] 🙅 no, because they aren't needed
-
-## [optional] What gif/emoji best describes this PR or how it makes you feel?
-<!-- You can choose the best that suits you (because YOLO!) : https://www.webfx.com/tools/emoji-cheat-sheet/ -->
-<!-- You can use the ones proposed : https://gitmoji.dev/ -->
