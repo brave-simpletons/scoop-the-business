@@ -1,5 +1,5 @@
 {
-    "version": "27.2.4",
+    "version": "28.1",
     "description": "Video recording and live streaming software",
     "homepage": "https://obsproject.com",
     "license": "GPL-2.0-only",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-x64.zip",
-            "hash": "fae9840096c43a62b410d91985b4b5fdd5b0d6e8d54ef4afe7af47180da8ae21",
+            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-28.1-Full-x64.zip",
+            "hash": "eef5acbc6b25c0a080d21b4d5a238c3f6451863b991d4f953d463e7d5a648277",
             "shortcuts": [
                 [
                     "bin\\64bit\\obs64.exe",
@@ -19,8 +19,8 @@
             ]
         },
         "32bit": {
-            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-x86.zip",
-            "hash": "51bacea13391874f2902575d2d8ab6e6eb6bd7c90682c7461e7cde15dec99c22",
+            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-28.1-Full-x86.zip",
+            "hash": "23a27125d1cfd4831cfaee3a9fca9e7a27fbf6b31152a7ffc2fe12cbd767c6fd",
             "shortcuts": [
                 [
                     "bin\\32bit\\obs32.exe",
