@@ -4,12 +4,16 @@
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
     "suggest": {
-        "Visual C++ Redistributable 2019": "vcredist2019"
+        "Visual C++ Redistributable": "vcredist"
     },
     "architecture": {
         "64bit": {
             "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.403/dotnet-sdk-6.0.403-win-x64.zip",
             "hash": "sha512:8f0c99249f34724d99fe2e7b8955098b5f5531dd9c7199453f1a5f066981de58b8324a5dbd92548e665b1c208c241f9603d8a18ea51b27fd4fdf0c17abc7392b"
+        },
+        "arm64": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.403/dotnet-sdk-6.0.403-win-arm64.zip",
+            "hash": "sha512:f3213ac5e7551102be48ca5c65fe098714a79a03ed3111d368ad07eb85ac22fea4c05a356fe742feb231e76f4d3e510954d4235631e0686d19bb0cb2f02b7e4a"
         },
         "32bit": {
             "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.403/dotnet-sdk-6.0.403-win-x86.zip",
@@ -17,19 +21,26 @@
         }
     },
     "bin": "dotnet.exe",
-    "env_add_path": ".",
+    "env_add_path": [
+        ".",
+        "\\sdk\\6.0.403"
+    ],
     "env_set": {
         "DOTNET_ROOT": "$dir",
+        "DOTNET_CLI_TELEMETRY_OPTOUT": true,
         "MSBuildSDKsPath": "$dir\\sdk\\$version\\Sdks"
     },
     "checkver": {
         "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
-        "regex": "(?s)(?<rtv>[\\d.]+)[^\\d]*?([\\d.]+)[^\\d]*?(?:current|lts)"
+        "regex": "(?s)(?<rtv>[\\d.]+)[^\\d]*?([\\d.]+)[^\\d]*?(?:lts)([\\w\",\\s\\-\\:]+)(?:active)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x64.zip"
+            },
+            "arm64": {
+                "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-arm64.zip"
             },
             "32bit": {
                 "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x86.zip"
@@ -37,6 +48,10 @@
         },
         "hash": {
             "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$matchRtv-sha.txt"
-        }
+        },
+        "env_add_path": [
+            ".",
+            "\\sdk\\$version"
+        ]
     }
 }
