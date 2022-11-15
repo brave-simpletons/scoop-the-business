@@ -1,15 +1,18 @@
 on:
   pull_request:
-    types: [ opened ]
+    types: [ opened, reopened ]
+  issue_comment:
+    types: [ created ]
 name: Pull Requests
 jobs:
   pullRequestHandler:
-    name: Pull Request Validator
+    name: Pull Request Validation
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@main
     - name: Pull Request Validation
-      uses: Ash258/Scoop-GithubActions@stable-win
+      uses: ScoopInstaller/GithubActions@main
+      if: github.event.action == 'opened' || github.event.action == 'reopened' || startsWith(github.event.comment.body, '/verify')
       env:
-        GITH_EMAIL: BotServiceAutomation@users.noreply.github.com
+        USER_EMAIL: BotServiceAutomation@users.noreply.github.com
         GITHUB_TOKEN: ${{ secrets.GH_BS_TOKEN }}
