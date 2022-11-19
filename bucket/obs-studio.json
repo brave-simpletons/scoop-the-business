@@ -17,16 +17,6 @@
                     "OBS Studio"
                 ]
             ]
-        },
-        "32bit": {
-            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-28.1.1-Full-x86.zip",
-            "hash": "1cc5390b034f6d51d75cde508437aa3592a8ae7eed8e5c2d52bf5bff77ec792f",
-            "shortcuts": [
-                [
-                    "bin\\32bit\\obs32.exe",
-                    "OBS Studio"
-                ]
-            ]
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\portable_mode.txt\")) { New-Item \"$dir\\portable_mode.txt\" | Out-Null }",
@@ -42,9 +32,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-$version-Full-x64.zip"
-            },
-            "32bit": {
-                "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-$version-Full-x86.zip"
             }
         }
     }
