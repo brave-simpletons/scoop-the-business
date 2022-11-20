@@ -38,10 +38,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://media.inkscape.org/dl/resources/file/inkscape-$version-2-x64.7z"
+                "url": "https://media.inkscape.org/dl/resources/file/$matchCleanfilename-x64.7z",
+                "extract_dir": "$matchCleanfilename-x64"
             },
             "32bit": {
-                "url": "https://media.inkscape.org/dl/resources/file/inkscape-$version-2-x86.7z"
+                "url": "https://media.inkscape.org/dl/resources/file/$matchCleanfilename-x86.7z",
+                "extract_dir": "$matchCleanfilename-x86"
             }
         },
         "hash": {
