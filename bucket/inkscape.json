@@ -25,8 +25,15 @@
         ]
     ],
     "checkver": {
-        "url": "https://inkscape.org/release",
-        "regex": "<title>Inkscape\\s+([\\d.]+)\\s+.*</title>"
+        "script": [
+            "$redirUrl = [System.Net.HttpWebRequest]::Create('https://inkscape.org/en/release').GetResponse().ResponseUri.AbsoluteUri",
+            "$test_dl = Invoke-WebRequest ($redirUrl + 'windows/64-bit/compressed-7z/dl/') -UseBasicParsing",
+            "$filename = ($test_dl.links | Where-Object href -match '\\.7z$' | Select-Object -first 1 -expand href) -split '/' | Select-Object -last 1",
+            "$clean_filename = $filename -replace '-(x86|x64)_\\w+\\.7z$'",
+            "$ink_version = $clean_filename -replace '^inkscape-([\\d\\.]+)[\\w\\-]+$','$1'",
+            "Write-Output $ink_version $clean_filename"
+        ],
+        "regex": "(?<version>.+)\\s(?<cleanfilename>.+)"
     },
     "autoupdate": {
         "architecture": {
