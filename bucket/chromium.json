@@ -1,11 +1,11 @@
 {
-    "version": "110.0.5481.100",
+    "version": "110.0.5481.104",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web.",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/macchrome/winchrome/releases/download/v110.5481.100-M110.0.5481.100-r839-Win64/ungoogled-chromium-110.0.5481.100-1_Win64.7z",
-    "hash": "sha1:672dde0e6a1044dc1aea8a35ad5ecc2d9ac783ad",
-    "extract_dir": "ungoogled-chromium-110.0.5481.100-1_Win64",
+    "url": "https://github.com/macchrome/winchrome/releases/download/v110.5481.104-M110.0.5481.104-r839-Win64/ungoogled-chromium-110.0.5481.104-1_Win64.7z",
+    "hash": "sha1:113fc2bc172eb510ef2657e436c6081c8c5c701a",
+    "extract_dir": "ungoogled-chromium-110.0.5481.104-1_Win64",
     "bin": [
         [
             "chrome.exe",
