@@ -1,5 +1,5 @@
 {
-    "version": "2.17.13",
+    "version": "2.17.3",
     "description": "Tabular Editor 2.x is a free, open-source, tool that lets you easily manipulate and manage measures, calculated columns, display folders, perspectives and translations in Analysis Services Tabular and Power BI XMLA Models (from Compatibility Level 1200 and onwards). The tool is written entirely in .NET WinForms (C#).",
     "homepage": "https://github.com/TabularEditor/TabularEditor",
     "notes": [],
