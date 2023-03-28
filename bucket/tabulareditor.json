@@ -13,6 +13,9 @@
             "hash": "16B93F81DE7CC865C0246D2F8067DE771F107350CB9B6BB7D8717B0D78D0E4A8"
         }
     },
+     "bin": [
+            "TabularEditor.exe"
+    ],
     "shortcuts": [
         [
             "TabularEditor.exe",
