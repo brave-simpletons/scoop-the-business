@@ -1,20 +1,20 @@
 {
-    "version": "1.3.1",
+    "version": "1.4.0",
     "description": "Desktop variant of OWASP Threat Dragon.",
     "homepage": "https://github.com/OWASP/threat-dragon-desktop",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/OWASP/threat-dragon-desktop/releases/download/v1.3.1/OWASP-Threat-Dragon-Setup-1.3.1.exe#/dl.7z",
-            "hash": "f62715293f5063bce6e6fa5cf96c669125d12c4343ada90cb1df4e50915ff918",
+            "url": "https://github.com/OWASP/threat-dragon-desktop/releases/download/v1.4.0/OWASP-Threat-Dragon-Setup-1.4.0.exe#/dl.7z",
+            "hash": "ab22258c4e175b09d9628fac7f7330b9559d34145069d57f135c1055a416036c",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/OWASP/threat-dragon-desktop/releases/download/v1.3.1/OWASP-Threat-Dragon-Setup-1.3.1.exe#/dl.7z",
-            "hash": "f62715293f5063bce6e6fa5cf96c669125d12c4343ada90cb1df4e50915ff918",
+            "url": "https://github.com/OWASP/threat-dragon-desktop/releases/download/v1.4.0/OWASP-Threat-Dragon-Setup-1.4.0.exe#/dl.7z",
+            "hash": "ab22258c4e175b09d9628fac7f7330b9559d34145069d57f135c1055a416036c",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Recurse"
