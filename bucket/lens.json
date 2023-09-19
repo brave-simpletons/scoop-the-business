@@ -1,5 +1,5 @@
 {
-    "version": "2023.8.291046-latest",
+    "version": "2023.9.191233-latest",
     "description": "IDE for Kubernetes clusters",
     "homepage": "https://k8slens.dev",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://api.k8slens.dev/binaries/Lens%20Setup%202023.8.291046-latest.exe#/dl.7z",
-            "hash": "sha512:fab22384da663cfe0c103a548b3a13452a7d59474c9cb6c62df0d27891cbe7914ae4d4f4c6c79efb0c10c2647f19ffc4abc3b59b1043f3e197a866133c69094f",
+            "url": "https://api.k8slens.dev/binaries/Lens%20Setup%202023.9.191233-latest.exe#/dl.7z",
+            "hash": "sha512:abe514ee255427bdca7792c4e5483a8c46b4395579b32227293acb5c974a0b6c6e3dafd6eecf64fe344664a3dfaa90c8c2e229310306429b42b56ed987fe9620",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
