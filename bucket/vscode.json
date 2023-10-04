@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://update.code.visualstudio.com/1.82.3/win32-x64-archive/stable#/dl.7z",
+                "https://az764295.vo.msecnd.net/stable/fdb98833154679dbaa7af67a5a29fe19e55c2b73/VSCode-win32-x64-1.82.3.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode-install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode-uninstall-context.reg"
             ],
@@ -22,7 +22,7 @@
         },
         "32bit": {
             "url": [
-                "https://update.code.visualstudio.com/1.82.3/win32-archive/stable#/dl.7z",
+                "https://az764295.vo.msecnd.net/stable/fdb98833154679dbaa7af67a5a29fe19e55c2b73/VSCode-win32-ia32-1.82.3.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode-install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode-uninstall-context.reg"
             ],
@@ -65,19 +65,20 @@
     ],
     "checkver": {
         "url": "https://code.visualstudio.com/sha?build=stable",
-        "jsonpath": "$.products[?(@.platform.os == 'win32-x64-archive')].name"
+        "jsonpath": "$.products[?(@.platform.os == 'win32-x64-archive')].url",
+        "regex": "https://(?<url>.*)/(?<filename>VSCode-win32-x64-(?<version>((\\d+\\.?)*)).zip)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://update.code.visualstudio.com/$version/win32-x64-archive/stable#/dl.7z",
+                "url": "https://$matchUrl/VSCode-win32-x64-$version.zip",
                 "hash": {
                     "url": "https://code.visualstudio.com/sha?build=stable",
                     "jsonpath": "$.products[?(@.platform.os == 'win32-x64-archive')].sha256hash"
                 }
             },
             "32bit": {
-                "url": "https://update.code.visualstudio.com/$version/win32-archive/stable#/dl.7z",
+                "url": "https://$matchUrl/VSCode-win32-ia32-$version.zip",
                 "hash": {
                     "url": "https://code.visualstudio.com/sha?build=stable",
                     "jsonpath": "$.products[?(@.platform.os == 'win32-archive')].sha256hash"
