@@ -3,8 +3,22 @@
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
+    "notes": [
+        "You can switch to the required dotnet SDK version at any time.",
+        "To do so, use the 'scoop reset' command with similar examples as shown below:",
+        "# Reseting to the latest .NET SDK (LTS) version",
+        "'scoop reset dotnet-sdk'",
+        "# Reseting to a specific .NET SDK version",
+        "'scoop reset dotnet-sdk@8.0.100'",
+        "# Reseting to the current .NET SDK (STS) version",
+        "'scoop reset dotnet-sdk-sts'",
+        "# Resetting to the latest .NET6 SDK version",
+        "'scoop reset dotnet6-sdk'"
+    ],
     "suggest": {
-        "Visual C++ Redistributable": "vcredist"
+        "Visual C++ Redistributable": "vcredist",
+        ".NET SDK (STS)": "dotnet-sdk-sts",
+        ".NET 6 SDK": "dotnet6-sdk"
     },
     "architecture": {
         "64bit": {
@@ -34,7 +48,7 @@
     },
     "checkver": {
         "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
-        "regex": "(?s)(?<rtv>[\\d.]+)[^\\d]*?([\\d.]+)[^\\d]*?(?:lts)([\\w\",\\s\\-\\:]+)(?:active)"
+        "jsonpath": "$.releases-index[?(@.release-type == 'lts' && @.support-phase != 'eol')].latest-sdk"
     },
     "autoupdate": {
         "architecture": {
@@ -49,7 +63,8 @@
             }
         },
         "hash": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$matchRtv-sha.txt"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/$majorVersion.$minorVersion/releases.json",
+            "regex": "(?s)$basename.*?$sha512"
         },
         "env_add_path": [
             ".",
