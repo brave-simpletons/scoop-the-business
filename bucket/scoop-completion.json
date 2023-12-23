@@ -1,16 +1,20 @@
 {
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "A Scoop tab completion module for PowerShell",
     "homepage": "https://github.com/Moeologist/scoop-completion",
     "license": "MIT",
-    "url": "https://github.com/Moeologist/scoop-completion/archive/v0.2.3.zip",
-    "hash": "59fcda6e723b2c0bf7430668ccfb57086d82e9472733a01f9f7f9315768b5e5f",
-    "extract_dir": "scoop-completion-0.2.3\\src",
+    "notes": [
+        "To enable the completion, you must add this line in your `$PROFILE`",
+        "'Import-Module \"$($(Get-Item $(Get-Command scoop.ps1).Path).Directory.Parent.FullName)\\modules\\scoop-completion\"'"
+    ],
+    "url": "https://github.com/Moeologist/scoop-completion/archive/v0.2.4.zip",
+    "hash": "d24e8cdfd9c899c589fdc4296c132a114f1efd0262a62bf2627fcf6babff0f60",
+    "extract_dir": "scoop-completion-0.2.4\\src",
     "psmodule": {
         "name": "scoop-completion"
     },
     "checkver": {
-        "url": "https://github.com/Moeologist/scoop-completion/releases/",
+        "url": "https://github.com/Moeologist/scoop-completion/tags/",
         "regex": "/releases/tag/v([\\d.]+)"
     },
     "autoupdate": {
