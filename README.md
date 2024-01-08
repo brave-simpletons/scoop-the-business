@@ -44,7 +44,7 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 
 scoop install git
 
-$fileGitConfig = $env:userprofile\.gitconfig
+$fileGitConfig = "$env:userprofile\.gitconfig"
 if (-not(Test-Path -Path $fileGitConfig -PathType Leaf)) {
     Invoke-WebRequest 'https://raw.githubusercontent.com/brave-simpletons/tooling-for-developers/main/git/gitconfig.txt' -OutFile $fileGitConfig
 }
