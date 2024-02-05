@@ -1,0 +1,24 @@
+{
+    "version": "0.9.1",
+    "description": "Tool used to generate and deploy a Humanitec deployment delta",
+    "homepage": "https://github.com/score-spec/score-humanitec",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/anchore/syft/releases/download/v0.100.0/syft_0.100.0_windows_amd64.zip",
+            "hash": "4490bf39e4432823a54166b6245f4255030d193eb05230c166f8589d48a736ca"
+        }
+    },
+    "bin": "syft.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/score-spec/score-humanitec/releases/download/$version/score-humanitec_$version_windows_amd64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}
