@@ -9,7 +9,7 @@
             "hash": "47626413e6adbf0672dfad336f1dbc71c5b016023f3c9fd53f63a0ce74b0a58e"
         }
     },
-    "bin": "score-humanitec.exe",
+    "bin": "score-compose.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
