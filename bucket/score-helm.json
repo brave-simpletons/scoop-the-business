@@ -9,7 +9,7 @@
             "hash": "28abefb57eac8b2687dc4016af2c2fb1a65f00ae3396847e740876f44e6621c9"
         }
     },
-    "bin": "score-humanitec.exe",
+    "bin": "score-helm.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
