@@ -9,7 +9,7 @@
             "hash": "4490bf39e4432823a54166b6245f4255030d193eb05230c166f8589d48a736ca"
         }
     },
-    "bin": "syft.exe",
+    "bin": "score-humanitec.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
