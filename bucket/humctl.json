@@ -9,7 +9,7 @@
             "hash": "391ef56bde1f26a43b6b283fb2519045e0f549ca2e2cd3f7aada4597f39a8787"
         }
     },
-    "bin": "score-humanitec.exe",
+    "bin": "humctl.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
