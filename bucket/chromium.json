@@ -4,7 +4,7 @@
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
     "url": "https://github.com/macchrome/winchrome/releases/download/v122.6261.56-M122.0.6261.56-r1250580-Win64/ungoogled-chromium-122.0.6261.56-1_Win64.7z",
-    "hash": "sha1:ade9835bbb6d3e62eea7202863738dd449cd2d33",
+    "hash": "sha1:03baac91fd517b4933032044d2fe0285e11b5d93",
     "extract_dir": "ungoogled-chromium-122.0.6261.56-1_Win64",
     "bin": [
         [
