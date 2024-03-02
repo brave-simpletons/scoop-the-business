@@ -46,6 +46,7 @@
             ]
         }
     },
+    "env_add_path": "bin",
     "bin": [
         [
             "bin\\code.cmd",
@@ -58,6 +59,7 @@
             "Visual Studio Code"
         ]
     ],
+    "persist": "data",
     "pre_install": [
         "$dirpath = \"$dir\".Replace('\\', '\\\\')",
         "$exepath = \"$dir\\Code.exe\".Replace('\\', '\\\\')",
@@ -77,7 +79,25 @@
         "Write-Host Registering the app with : \"$dir\\install-context.reg\"",
         "reg import \"$dir\\install-context.reg\"",
         "Write-Host Registering the file associations with : \"$dir\\install-associations.reg\"",
-        "reg import \"$dir\\install-associations.reg\""
+        "reg import \"$dir\\install-associations.reg\"",
+        "if (!(Test-Path \"$dir\\data\\cli\") -and (Test-Path \"$env:USERPROFILE\\.vscode\\cli\")) {",
+        "    info '[Portable Mode] Copying cli...'",
+        "    Copy-Item \"$env:USERPROFILE\\.vscode\\cli\" \"$dir\\data\" -Recurse",
+        "}",
+        "if (!(Test-Path \"$dir\\data\\extensions\") -and (Test-Path \"$env:USERPROFILE\\.vscode\\extensions\")) {",
+        "    info '[Portable Mode] Copying extensions...'",
+        "    Copy-Item \"$env:USERPROFILE\\.vscode\\extensions\" \"$dir\\data\" -Recurse",
+        "",
+        "    $extensions_file = \"$dir\\data\\extensions\\extensions.json\"",
+        "    if ((Test-Path \"$extensions_file\")) {",
+        "        info 'Adjusting path in extensions file...'",
+        "        (Get-Content \"$extensions_file\") -replace '(?<=vscode(/|\\\\\\\\)).*?(?=(/|\\\\\\\\)data(/|\\\\\\\\)extensions)', $version | Set-Content \"$extensions_file\"",
+        "    }",
+        "}",
+        "if (!(Test-Path \"$dir\\data\\user-data\") -and (Test-Path \"$env:AppData\\Code\")) {",
+        "    info '[Portable Mode] Copying user data...'",
+        "    Copy-Item \"$env:AppData\\Code\" \"$dir\\data\\user-data\" -Recurse",
+        "}"
     ],
     "uninstaller": {
         "script": [
