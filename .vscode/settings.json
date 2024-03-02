@@ -8,9 +8,10 @@
         "titleBar.inactiveBackground": "#71827c99",
         "titleBar.inactiveForeground": "#e7e7e799",
         "tab.activeBorder": "#8b9b95",
-        "editorGroup.border": "#8b9b95",
-        "panel.border": "#8b9b95",
-        "sideBar.border": "#8b9b95"
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#8b9b95",
+        "statusBarItem.remoteBackground": "#71827c",
+        "statusBarItem.remoteForeground": "#e7e7e7"
     },
     "peacock.color": "#71827c",
     "peacock.affectActivityBar": false,
