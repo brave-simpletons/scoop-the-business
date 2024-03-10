@@ -13,22 +13,15 @@
         }
     },
     "bin": "databricks.exe",
-    "shortcuts": [
-        [
-            "databricks.exe"
-        ]
-    ],
-    "checkver": {
-        "github": "https://github.com/databricks/cli"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/databricks/cli/releases/download/v$version/databricks_cli_$version_windows_amd64.zip"
             }
+        },
+        "hash": {
+            "url": "$baseurl/databricks_cli_$version_SHA256SUMS"
         }
-    },
-    "hash": {
-        "url": "$baseurl/databricks_cli_$version_SHA256SUMS"
     }
 }
