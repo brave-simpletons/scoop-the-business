@@ -1,12 +1,12 @@
 {
-    "version": "0.17.0",
+    "version": "0.18.0",
     "description": "The CLI for Humanitec.",
     "homepage": "https://github.com/humanitec/cli",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/humanitec/cli/releases/download/v0.17.0/cli_0.17.0_windows_amd64.zip",
-            "hash": "1cb63270fa6fe5cbffffec0ee3570b03efcf28f216d5fb3422ec5e0eb8d99719"
+            "url": "https://github.com/humanitec/cli/releases/download/v0.18.0/cli_0.18.0_windows_amd64.zip",
+            "hash": "ac07f125d313eeb27023bb0f27e3e925f979f88c09ce822c8774e1db504f4d1c"
         }
     },
     "bin": "humctl.exe",
