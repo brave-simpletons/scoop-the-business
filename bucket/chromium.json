@@ -1,11 +1,11 @@
 {
-    "version": "123.0.6312.90",
+    "version": "123.0.6312.106",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web.",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/macchrome/winchrome/releases/download/v123.6312.90-M123.0.6312.90-r1262506-Win64/ungoogled-chromium-123.0.6312.90-1_Win64.7z",
-    "hash": "sha1:28ec760052629302848b3a9cf8c3730256c9ea76",
-    "extract_dir": "ungoogled-chromium-123.0.6312.90-1_Win64",
+    "url": "https://github.com/macchrome/winchrome/releases/download/v123.6312.106-M123.0.6312.106-r1262506-Win64/ungoogled-chromium-123.0.6312.106-1_Win64.7z",
+    "hash": "sha1:6039160f87cea2a0d3dcbd004ac564fbc6cd3344",
+    "extract_dir": "ungoogled-chromium-123.0.6312.106-1_Win64",
     "bin": [
         [
             "chrome.exe",
