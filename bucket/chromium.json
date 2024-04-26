@@ -4,7 +4,7 @@
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
     "url": "https://github.com/macchrome/winchrome/releases/download/v124.6367.90-M124.0.6367.90-r1274542-Win64/ungoogled-chromium-124.0.6367.90-1_Win64.7z",
-    "hash": "sha1:28d97ca3088e7de6a994df5c7e1e3b119b679a32",
+    "hash": "sha1:35cfb396dc50b98e53f99016076ac549fbc50e52",
     "extract_dir": "ungoogled-chromium-124.0.6367.90-1_Win64",
     "bin": [
         [
