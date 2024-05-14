@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://www.7-zip.org/a/7z2301-x64.exe#/7z2301.exe",
+                "https://www.7-zip.org/a/7z2301-x64.exe#/7z.23.01.exe",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
             ],
@@ -21,7 +21,7 @@
         },
         "32bit": {
             "url": [
-                "https://www.7-zip.org/a/7z2301.exe#/7z2301.exe",
+                "https://www.7-zip.org/a/7z2301.exe#/7z.23.01.exe",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
             ],
@@ -33,7 +33,7 @@
         },
         "arm64": {
             "url": [
-                "https://www.7-zip.org/a/7z2301-arm64.exe#/7z2301.exe",
+                "https://www.7-zip.org/a/7z2301-arm64.exe#/7z.23.01.exe",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
             ],
@@ -48,12 +48,10 @@
         "Write-Host \"Downloading the temporary extractor...\"",
         "$7zr = Join-Path $env:TMP '7zr.exe'",
         "Invoke-WebRequest https://www.7-zip.org/a/7zr.exe -OutFile $7zr",
-        "Get-ChildItem -Path $dir -Filter 7z*.exe | Select-Object -First 1 | ForEach-Object {",
-        "  Write-Host \"Extracting '$_' ...\"",
-        "  Invoke-Expression \"& '$7zr' x '$_' '-o$dir' -y\" | Out-Null",
-        "  Write-Host \"Cleaning up...\"",
-        "  Remove-Item \"$dir\\Uninstall.exe\", \"$_\", $7zr",
-        "}",
+        "Write-Host \"Extracting '$dir\\7z.$version.exe' ...\"",
+        "Invoke-Expression \"& '$7zr' x '$dir\\7z.$version.exe' '-o$dir' -y\" | Out-Null",
+        "Write-Host \"Cleaning up...\"",
+        "Remove-Item \"$dir\\Uninstall.exe\", \"$dir\\7z.$version.exe\", $7zr",
         "Write-Host \"Modifying the registry files...\"",
         "$7zip_root = \"$dir\".Replace('\\', '\\\\')",
         "'install-context.reg', 'uninstall-context.reg' | ForEach-Object {",
@@ -95,13 +93,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.7-zip.org/a/7z$cleanVersion-x64.exe#/7z$cleanVersion.exe"
+                "url": "https://www.7-zip.org/a/7z$cleanVersion-x64.exe#/7z.$version.exe"
             },
             "32bit": {
-                "url": "https://www.7-zip.org/a/7z$cleanVersion.exe#/7z$cleanVersion.exe"
+                "url": "https://www.7-zip.org/a/7z$cleanVersion.exe#/7z.$version.exe"
             },
             "arm64": {
-                "url": "https://www.7-zip.org/a/7z$cleanVersion-arm64.exe#/7z$cleanVersion.exe"
+                "url": "https://www.7-zip.org/a/7z$cleanVersion-arm64.exe#/7z.$version.exe"
             }
         }
     }
