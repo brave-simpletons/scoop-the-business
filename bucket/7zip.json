@@ -54,7 +54,7 @@
         "  Write-Host \"Cleaning up...\"",
         "  Remove-Item \"$dir\\Uninstall.exe\", \"$_\", $7zr",
         "}",
-        "Write-Host \"Modifying the regsitry files...\"",
+        "Write-Host \"Modifying the registry files...\"",
         "$7zip_root = \"$dir\".Replace('\\', '\\\\')",
         "'install-context.reg', 'uninstall-context.reg' | ForEach-Object {",
         "    $content = Get-Content \"$dir\\$_\"",
