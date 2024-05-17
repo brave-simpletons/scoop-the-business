@@ -1,40 +1,105 @@
 {
-    "version": "23.01",
+    "version": "24.05",
     "description": "A multi-format file archiver with high compression ratios",
     "homepage": "https://www.7-zip.org/",
     "license": {
-        "identifier": "Freeware,LGPL-2.0-only,BSD-3-Clause",
+        "identifier": "Freeware,GNU LGPL,unRAR license,BSD 3-Clause,BSD 2-clause",
         "url": "https://www.7-zip.org/license.txt"
     },
     "architecture": {
         "64bit": {
-            "url": "https://7-zip.org/a/7z2301-x64.msi",
-            "hash": "0ba639b6dacdf573d847c911bd147c6384381a54dac082b1e8c77bc73d58958b"
+            "url": [
+                "https://www.7-zip.org/a/7z2405-x64.exe#/7z.24.05.exe",
+                "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
+                "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
+            ],
+            "hash": [
+                "12ef1c8127ec3465520e4cfd23605b708d81a5a2cf37ba124f018e5c094de0d9",
+                "a3e7a9e3088e4316a7281ef7f0e95168dcdf68d28653b6e44db7b61c9eb01ae6",
+                "494fb5be4bc0b4323701319e72d31acb8c1c8a5d7c94f0e26620a415f551fcfa"
+            ]
         },
         "32bit": {
-            "url": "https://7-zip.org/a/7z2301.msi",
-            "hash": "b32e47f88d03dc29b5cb02c6ed07a7e48015f655346b62a3b32033c49ed9bb06"
+            "url": [
+                "https://www.7-zip.org/a/7z2405.exe#/7z.24.05.exe",
+                "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
+                "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
+            ],
+            "hash": [
+                "3194526f123508f9fa56c66e767738e2648fd491c44531af28323a126a679c5d",
+                "a3e7a9e3088e4316a7281ef7f0e95168dcdf68d28653b6e44db7b61c9eb01ae6",
+                "494fb5be4bc0b4323701319e72d31acb8c1c8a5d7c94f0e26620a415f551fcfa"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://www.7-zip.org/a/7z2405-arm64.exe#/7z.24.05.exe",
+                "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
+                "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
+            ],
+            "hash": [
+                "40f19d312dd3df245b3d319ef8a2deed354710ca69f7cd109db458b1c42259f2",
+                "a3e7a9e3088e4316a7281ef7f0e95168dcdf68d28653b6e44db7b61c9eb01ae6",
+                "494fb5be4bc0b4323701319e72d31acb8c1c8a5d7c94f0e26620a415f551fcfa"
+            ]
         }
     },
-    "extract_dir": "Files\\7-Zip",
-    "bin": "7z.exe",
+    "pre_install": [
+        "Write-Host \"Downloading the temporary extractor...\"",
+        "$7zr = Join-Path $env:TMP '7zr.exe'",
+        "Invoke-WebRequest https://www.7-zip.org/a/7zr.exe -OutFile $7zr",
+        "Write-Host \"Extracting '$dir\\7z.$version.exe' ...\"",
+        "Invoke-Expression \"& '$7zr' x '$dir\\7z.$version.exe' '-o$dir' -y\" | Out-Null",
+        "Write-Host \"Cleaning up...\"",
+        "Remove-Item \"$dir\\Uninstall.exe\", \"$dir\\7z.$version.exe\", $7zr",
+        "Write-Host \"Modifying the registry files...\"",
+        "$7zip_root = \"$dir\".Replace('\\', '\\\\')",
+        "'install-context.reg', 'uninstall-context.reg' | ForEach-Object {",
+        "    $content = Get-Content \"$dir\\$_\"",
+        "    $content = $content.Replace('$7zip_root', $7zip_root)",
+        "    if ($global) {",
+        "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "    }",
+        "    Set-Content -Path \"$dir\\$_\" $content -Encoding Ascii",
+        "}"
+    ],
+    "post_install": [
+        "Write-Host Registering the app with : \"$dir\\install-context.reg\"",
+        "reg import \"$dir\\install-context.reg\""
+    ],
+    "pre_uninstall": [
+        "Write-Host UnRegistering the app with : \"$dir\\uninstall-context.reg\"",
+        "reg import \"$dir\\uninstall-context.reg\""
+    ],
+    "bin": [
+        "7z.exe",
+        "7zFM.exe",
+        "7zG.exe"
+    ],
     "shortcuts": [
         [
             "7zFM.exe",
             "7-Zip"
         ]
     ],
+    "persist": [
+        "Codecs",
+        "Formats"
+    ],
     "checkver": {
         "url": "https://www.7-zip.org/download.html",
-        "regex": "Download 7-Zip ([\\d.]+)"
+        "regex": "Download 7-Zip ([\\d.]+) \\(\\d{4}-\\d{2}-\\d{2}\\)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://7-zip.org/a/7z$cleanVersion-x64.msi"
+                "url": "https://www.7-zip.org/a/7z$cleanVersion-x64.exe#/7z.$version.exe"
             },
             "32bit": {
-                "url": "https://7-zip.org/a/7z$cleanVersion.msi"
+                "url": "https://www.7-zip.org/a/7z$cleanVersion.exe#/7z.$version.exe"
+            },
+            "arm64": {
+                "url": "https://www.7-zip.org/a/7z$cleanVersion-arm64.exe#/7z.$version.exe"
             }
         }
     }

@@ -1,5 +1,5 @@
 {
-    "version": "2.16.34",
+    "version": "2.16.40",
     "description": "Differencing and merging tool, that compares both folders and files, presenting differences in a visual text format that is easy to understand and handle.",
     "homepage": "https://winmerge.org",
     "license": "GPL-2.0-only",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/winmerge/stable/2.16.34/winmerge-2.16.34-x64-exe.zip",
-            "hash": "sha1:4e70852a73d1d3391c9c639f6fdd9a9d73f51434"
+            "url": "https://downloads.sourceforge.net/project/winmerge/stable/2.16.40/winmerge-2.16.40-x64-exe.zip",
+            "hash": "sha1:6f40350d3e689d52e2538c2717ba3bc65bdc8f23"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/winmerge/stable/2.16.34/winmerge-2.16.34-exe.zip",
-            "hash": "sha1:3407a14662fadbb63741b260dc4fde3e567aaef3"
+            "url": "https://downloads.sourceforge.net/project/winmerge/stable/2.16.40/winmerge-2.16.40-exe.zip",
+            "hash": "sha1:fae1ab5acff210bc010600be12e2502929fc7bf9"
         }
     },
     "extract_dir": "WinMerge",

@@ -1,5 +1,5 @@
 {
-    "version": "3.12.0",
+    "version": "3.12.3",
     "description": "A programming language that lets you work quickly and integrate systems more effectively.",
     "homepage": "https://www.python.org/",
     "license": "Python-2.0",
@@ -7,24 +7,24 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe#/setup.exe",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "md5:32ab6a1058dfbde76951b7aa7c2335a6",
+                "edfc6c84dc47eebd4fae9167e96ff5d9c27f8abaa779ee1deab9c3d964d0de3c",
                 "27c2d7e74442f356d54d29000379afd55078fb4ede00455fc012f81745e4bcac",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
         },
         "32bit": {
             "url": [
-                "https://www.python.org/ftp/python/3.12.0/python-3.12.0.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.12.3/python-3.12.3.exe#/setup.exe",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "md5:de59862985bf7afa639f2e4f9e2a722c",
+                "a9f37c55f9922d00ef25af40d5017e86c2d98abd7d599307bccf0f2b3d055983",
                 "27c2d7e74442f356d54d29000379afd55078fb4ede00455fc012f81745e4bcac",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
@@ -100,21 +100,25 @@
         "Lib\\site-packages"
     ],
     "checkver": {
-        "url": "https://www.python.org/downloads/windows/",
-        "regex": "Latest Python 3 Release - Python ([\\d.]+)"
+        "url": "https://github.com/python/cpython/tags",
+        "regex": "/releases/tag/v([\\d.]+)\""
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.python.org/ftp/python/$version/python-$version-amd64.exe#/setup.exe"
+                "url": [
+                    "https://www.python.org/ftp/python/$version/python-$version-amd64.exe#/setup.exe",
+                    "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
+                    "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
+                ]
             },
             "32bit": {
-                "url": "https://www.python.org/ftp/python/$version/python-$version.exe#/setup.exe"
+                "url": [
+                    "https://www.python.org/ftp/python/$version/python-$version.exe#/setup.exe",
+                    "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
+                    "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
+                ]
             }
-        },
-        "hash": {
-            "url": "https://www.python.org/downloads/release/python-$cleanVersion/",
-            "regex": "(?sm)$basename.*?$md5"
         }
     }
 }

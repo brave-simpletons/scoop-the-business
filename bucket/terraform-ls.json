@@ -1,5 +1,5 @@
 {
-    "version": "0.30.1",
+    "version": "0.33.1",
     "description": "Terraform Language Server",
     "homepage": "https://github.com/hashicorp/terraform-ls",
     "license": "MPL-2.0",
@@ -8,12 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hashicorp/terraform-ls/releases/download/v0.30.1/terraform-ls_0.30.1_windows_amd64.zip",
-            "hash": "a832c4c1798f2517cb158aa03f4301d11d6336253fd4f685b825137b57c9d370"
+            "url": "https://releases.hashicorp.com/terraform-ls/0.33.1/terraform-ls_0.33.1_windows_amd64.zip",
+            "hash": "40733d8e38b0196180c39f5f85e9f5d04f41e99f4f62f50d967d4a77f51a85d2"
         },
         "32bit": {
-            "url": "https://github.com/hashicorp/terraform-ls/releases/download/v0.30.1/terraform-ls_0.30.1_windows_386.zip",
-            "hash": "3e03308446ee9cbd644520f6c2b578a07dd8cd10cedfb281e9e249f34288686a"
+            "url": "https://releases.hashicorp.com/terraform-ls/0.33.1/terraform-ls_0.33.1_windows_386.zip",
+            "hash": "5ee1f73da3eb0e40b9a01bd1441846a945869e3175855c9b6babb99e811ee976"
+        },
+        "arm64": {
+            "url": "https://releases.hashicorp.com/terraform-ls/0.33.1/terraform-ls_0.33.1_windows_arm64.zip",
+            "hash": "27920f297e091051668ee3cad3125408e3117608bb6287bfdc2068b7967ba7cd"
         }
     },
     "bin": "terraform-ls.exe",
@@ -21,14 +25,17 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/hashicorp/terraform-ls/releases/download/v$version/terraform-ls_$version_windows_amd64.zip"
+                "url": "https://releases.hashicorp.com/terraform-ls/$version/terraform-ls_$version_windows_amd64.zip"
             },
             "32bit": {
-                "url": "https://github.com/hashicorp/terraform-ls/releases/download/v$version/terraform-ls_$version_windows_386.zip"
+                "url": "https://releases.hashicorp.com/terraform-ls/$version/terraform-ls_$version_windows_386.zip"
+            },
+            "arm64": {
+                "url": "https://releases.hashicorp.com/terraform-ls/$version/terraform-ls_$version_windows_arm64.zip"
             }
         },
         "hash": {
-            "url": "$baseurl/terraform-ls_$version_SHA256SUMS"
+            "url": "https://releases.hashicorp.com/terraform-ls/$version/terraform-ls_$version_SHA256SUMS"
         }
     }
 }

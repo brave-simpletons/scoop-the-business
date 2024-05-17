@@ -40,16 +40,16 @@ It's really easy to install and configure Scoop to use our bucket. Just follow t
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString("https://get.scoop.sh")
 
 scoop install git
 
-$fileGitConfig = $env:userprofile\.gitconfig
+$fileGitConfig = "$env:userprofile\.gitconfig"
 if (-not(Test-Path -Path $fileGitConfig -PathType Leaf)) {
-    Invoke-WebRequest 'https://raw.githubusercontent.com/brave-simpletons/tooling-for-developers/main/git/gitconfig.txt' -OutFile $fileGitConfig
+    Invoke-WebRequest "https://raw.githubusercontent.com/brave-simpletons/tooling-for-developers/main/git/gitconfig.txt" -OutFile $fileGitConfig
 }
 
-scoop bucket add business 'https://github.com/brave-simpletons/scoop-the-business.git'
+scoop bucket add business "https://github.com/brave-simpletons/scoop-the-business.git"
 ```
 
 ## Using scoop

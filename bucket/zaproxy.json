@@ -1,13 +1,13 @@
 {
-    "version": "2.14.0",
+    "version": "2.15.0",
     "description": "Integrated penetration testing tool for finding vulnerabilities in web applications",
     "homepage": "https://www.zaproxy.org",
     "license": "Apache-2.0",
     "suggest": {
         "JRE": "java/adopt8-hotspot-jre"
     },
-    "url": "https://github.com/zaproxy/zaproxy/releases/download/v2.14.0/ZAP_2_14_0_windows.exe#/dl.7z",
-    "hash": "df49ffbd14cf82cde5ac06902615e40cbfce1576f866436366708c0845eb9ec6",
+    "url": "https://github.com/zaproxy/zaproxy/releases/download/v2.15.0/ZAP_2_15_0_windows.exe#/dl.7z",
+    "hash": "28b348dd65116ddabbbbd98b7f84864a0bb0f98d656266f2f08bfd010ae51c57",
     "pre_install": "(Get-Content \"$dir\\zap.bat\") -replace \"\\s+(zap-$version\\.jar)\", ' %~dp0$1' | Out-File \"$dir\\zap.bat\" -Encoding Ascii",
     "bin": "zap.bat",
     "shortcuts": [

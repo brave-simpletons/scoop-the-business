@@ -1,5 +1,5 @@
 {
-    "version": "8.4.2",
+    "version": "9.2.0",
     "description": "Software composition analysis utility that identifies project dependencies and checks if there are any known, publicly disclosed, vulnerabilities.",
     "homepage": "https://owasp.org/www-project-dependency-check/",
     "license": "Apache-2.0",
@@ -10,8 +10,8 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/jeremylong/DependencyCheck/releases/download/v8.4.2/dependency-check-8.4.2-release.zip",
-    "hash": "de229dadb668614c2a3cd4ec7748d9bc6a0a297ba58c2b849ee1d7bf8e0b0e3a",
+    "url": "https://github.com/jeremylong/DependencyCheck/releases/download/v9.2.0/dependency-check-9.2.0-release.zip",
+    "hash": "dd453ebff45b8e1582fc29f147c95d539f7283b760678375b9e666cb1fc1b603",
     "extract_dir": "dependency-check",
     "bin": "bin\\dependency-check.bat",
     "checkver": {

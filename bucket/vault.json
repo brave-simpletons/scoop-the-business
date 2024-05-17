@@ -1,16 +1,16 @@
 {
-    "version": "1.15.1",
+    "version": "1.16.2",
     "description": "Secure, store, and tightly control access to tokens, passwords, certificates, API keys, and other secrets in modern computing.",
     "homepage": "https://www.vaultproject.io",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://releases.hashicorp.com/vault/1.15.1/vault_1.15.1_windows_amd64.zip",
-            "hash": "2b95c8dfab77c9915b4471366e3fc348a41e96d60072cec14b30ae9860c8dd1f"
+            "url": "https://releases.hashicorp.com/vault/1.16.2/vault_1.16.2_windows_amd64.zip",
+            "hash": "6b53339d45e1f254f07244fb63cff793d3ae14c73f10f6a43bf852621f8b0799"
         },
         "32bit": {
-            "url": "https://releases.hashicorp.com/vault/1.15.1/vault_1.15.1_windows_386.zip",
-            "hash": "a6af2a87378212dcdfdc1c0ef3e67e63831c89efff722a1fa4db824c1f7b5ab6"
+            "url": "https://releases.hashicorp.com/vault/1.16.2/vault_1.16.2_windows_386.zip",
+            "hash": "1abd6f2f4f64ad7d678680bb4b3e608ee883772b3c63a4525807b175bc4084bf"
         }
     },
     "bin": "vault.exe",

@@ -1,5 +1,5 @@
 {
-    "version": "7.0.403",
+    "version": "9.0.100-preview.3.24204.13",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,22 +8,22 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/7.0.403/dotnet-sdk-7.0.403-win-x64.zip",
-            "hash": "sha512:dd92208e219fcff20ffd39a82ecbe1f8b9c16963db2c675b64b87207bec54d12554da17e047fc482d13c2dcbedd13758c051d22bb2b1268299d066499ac543df"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.3.24204.13/dotnet-sdk-9.0.100-preview.3.24204.13-win-x64.zip",
+            "hash": "sha512:55114bd014d2613aa35e91148bad263cfe0fd8499995c9641bdfff1b7c2f10c70add06c1d9c016f60fe7c4d144725154187a7c0ad4b1296f1ec32e876ae3ceed"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/7.0.403/dotnet-sdk-7.0.403-win-arm64.zip",
-            "hash": "sha512:689db2a61055a9f1be14d1c2d71a4b3004c932dfef5a341cff95da5b7ca161c82a07b273d647771235a091fd92aee7ee143aad57a4a6f6eca44ab14e2a7a400b"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.3.24204.13/dotnet-sdk-9.0.100-preview.3.24204.13-win-arm64.zip",
+            "hash": "sha512:1fb88185859896b2fc6e0e6f867b6a27cdea13aa414c8c6b606ce72b48148fd938209fb49c073316689a5bcc739443a647fa60b98b6ffedb0fd508886096b7e9"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/7.0.403/dotnet-sdk-7.0.403-win-x86.zip",
-            "hash": "sha512:afd64726ba46cdf3507cfeb268a10a70649a51f7f08121823bc236301038241706a4e8acb70c7aff70e1e14ef8e733718b087b26849aff95105423401792c694"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.3.24204.13/dotnet-sdk-9.0.100-preview.3.24204.13-win-x86.zip",
+            "hash": "sha512:e240c2ebfa0089b95077f297748988b9c1cfd662fc39616b225c479f810dbe7ffafc91c5c3faf7cdf633be2660e1aee3d201209122cc30a9a66be21273197741"
         }
     },
     "bin": "dotnet.exe",
     "env_add_path": [
         ".",
-        "\\sdk\\7.0.403"
+        "\\sdk\\9.0.100-preview.3.24204.13"
     ],
     "env_set": {
         "DOTNET_ROOT": "$dir",
@@ -34,7 +34,8 @@
     },
     "checkver": {
         "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
-        "regex": "(?s)(?<rtv>[\\d.]+)[^\\d]*?([\\d.]+)[^\\d]*?(?:sts)([\\w\",\\s\\-\\:]+)(?:active)"
+        "jsonpath": "$.releases-index[?(@.release-type == 'sts' && @.support-phase != 'eol')].latest-sdk",
+        "regex": "^([\\d\\.]+(-preview[\\d\\.]+))?\\\\?n?.*"
     },
     "autoupdate": {
         "architecture": {
@@ -49,7 +50,8 @@
             }
         },
         "hash": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$matchRtv-sha.txt"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/$majorVersion.$minorVersion/releases.json",
+            "regex": "(?s)$basename.*?$sha512"
         },
         "env_add_path": [
             ".",
