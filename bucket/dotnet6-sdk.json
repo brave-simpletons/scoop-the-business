@@ -1,5 +1,5 @@
 {
-    "version": "6.0.423",
+    "version": "6.0.424",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,22 +8,22 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.423/dotnet-sdk-6.0.423-win-x64.zip",
-            "hash": "sha512:34d4000c23822c92f8d6c5d72d65036544e7c3bfb958d3fea89da34e185df80c22ca0cbcd789725c90e935c71dcef2a361ca909bbe49c61fffd6984f211a22f4"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.424/dotnet-sdk-6.0.424-win-x64.zip",
+            "hash": "sha512:309dcfdede6c723c8a060e2500a6b5622818f15c55352de10f9870fd52975acae20fb0d513723a8ab833df70834dc8dfbe335012bb86638d86bf94f1ce42353c"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.423/dotnet-sdk-6.0.423-win-arm64.zip",
-            "hash": "sha512:6a36e8d4c09d814bcd79daa52b1da14e5ffc4aa9118f15412a6862e2639ed948c3bc3a0e971d682130776409751e20c8656728c1bcac705a2c09b8300ac949cb"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.424/dotnet-sdk-6.0.424-win-arm64.zip",
+            "hash": "sha512:812996c005760802764ccecae31153a743fb469fb7d7b4ad7528ae4e5bc1443679ef723ae0363e3541865de39d78e370ffdb22cccdf8e49598628cfb731aff58"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.423/dotnet-sdk-6.0.423-win-x86.zip",
-            "hash": "sha512:15a4e0240092eab86d7713262cdcd2ae116823d69042f3958ccc5d77b7f9f8a3d75f1357546667a4b86e1b31e56e6ae17b728bee2b41e9b43c22fa0107fe027e"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.424/dotnet-sdk-6.0.424-win-x86.zip",
+            "hash": "sha512:eed1f01bc31f1bbc255a7c8287619259b55ef441640a9df393fafd1176232d8679ab7c7c3c38496b733c6fbcd19bb72c9ca4d362f8084472e4bc3ecfa24c61a3"
         }
     },
     "bin": "dotnet.exe",
     "env_add_path": [
         ".",
-        "\\sdk\\6.0.423"
+        "\\sdk\\6.0.424"
     ],
     "env_set": {
         "DOTNET_ROOT": "$dir",
