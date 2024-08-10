@@ -1,23 +1,23 @@
 {
-    "version": "20.11.1",
+    "version": "20.16.0",
     "description": "As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. (Long Term Support)",
     "homepage": "https://nodejs.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-win-x64.7z",
-            "hash": "fb9b5348259988a562a48eed7349e7e716c0bec78d98ad0a336b2993a8b3bf34",
-            "extract_dir": "node-v20.11.1-win-x64"
+            "url": "https://nodejs.org/dist/v20.16.0/node-v20.16.0-win-x64.7z",
+            "hash": "1b3961054a484476872715d9ca04bc491d797fde6336db514b6e6fcbb71fae9d",
+            "extract_dir": "node-v20.16.0-win-x64"
         },
         "32bit": {
-            "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-win-x86.7z",
-            "hash": "c2b1863d8979546804a39fc63d0a9bc9c6e49cb2f6c9d1e52844a24629b24765",
-            "extract_dir": "node-v20.11.1-win-x86"
+            "url": "https://nodejs.org/dist/v20.16.0/node-v20.16.0-win-x86.7z",
+            "hash": "76f1806fde0b09ed4044f29ea140fb2bea9bce745b9892ec4aeb6537344db6f1",
+            "extract_dir": "node-v20.16.0-win-x86"
         },
         "arm64": {
-            "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-win-arm64.7z",
-            "hash": "f1cd449fcbeb1b948e8498cb8edd9655fa319d109a7f4c5bd96a9b122b91538a",
-            "extract_dir": "node-v20.11.1-win-arm64"
+            "url": "https://nodejs.org/dist/v20.16.0/node-v20.16.0-win-arm64.7z",
+            "hash": "52e5666a379acd8533d9ccab66c2321a6ffc83766248419bfbd41ba8bc071244",
+            "extract_dir": "node-v20.16.0-win-arm64"
         }
     },
     "persist": [
@@ -33,8 +33,9 @@
         "Set-Content -Value \"prefix=$persist_dir\\bin`ncache=$persist_dir\\cache\" -Path \"$dir\\node_modules\\npm\\npmrc\""
     ],
     "checkver": {
-        "url": "https://nodejs.org/en/download/",
-        "regex": "LTS Version.*: <strong>([\\d.]+)</strong>"
+        "url": "https://nodejs.org/dist/index.json",
+        "jsonpath": "$..[?(@.lts != false)].version",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
