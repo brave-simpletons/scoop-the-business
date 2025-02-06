@@ -123,7 +123,10 @@
         "Scripts",
         "."
     ],
-    "persist": "Lib\\site-packages",
+    "persist": [
+        "Scripts",
+        "Lib\\site-packages"
+    ],
     "checkver": {
         "url": "https://www.python.org/downloads/windows/",
         "regex": "Latest Python 3 Release - Python ([\\d.]+)"
