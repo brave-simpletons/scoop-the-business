@@ -1,5 +1,5 @@
 {
-    "version": "1.21.3231.0",
+    "version": "1.22.10352.0",
     "description": "The new Windows Terminal, and the original Windows console host - all in the same place!",
     "homepage": "https://github.com/microsoft/terminal",
     "license": "MIT",
@@ -13,42 +13,42 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/microsoft/terminal/releases/download/v1.21.3231.0/Microsoft.WindowsTerminal_1.21.3231.0_x64.zip",
+                "https://github.com/microsoft/terminal/releases/download/v1.22.10352.0/Microsoft.WindowsTerminal_1.22.10352.0_x64.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/windows-terminal/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/windows-terminal/uninstall-context.reg"
             ],
             "hash": [
-                "8fb268b93c9b99d6cf553709c2c58bf1b2ff4b364199152e09221dfb2a44bbf5",
+                "c2cf549a567f60daf291dc87d06f69e74935426e96a5ed0f04845d8abe5504dd",
                 "baf11f7fb4e99fbd80e931dcdbb860b4e598182830ac7b310d7cd9efcb2a66d8",
                 "5e1429c0750845a2bd09b47029c3ae47ce8fa4dbc0effb92740d91ea7076dd4b"
             ]
         },
         "32bit": {
             "url": [
-                "https://github.com/microsoft/terminal/releases/download/v1.21.3231.0/Microsoft.WindowsTerminal_1.21.3231.0_x86.zip",
+                "https://github.com/microsoft/terminal/releases/download/v1.22.10352.0/Microsoft.WindowsTerminal_1.22.10352.0_x86.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/windows-terminal/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/windows-terminal/uninstall-context.reg"
             ],
             "hash": [
-                "e68e57926d7daf3e012218aa65f935fd4959fdcda2ef9a603a642aa871768047",
+                "72116064667162890225b6112fcda4a5db15dff272491a6d1dc5cabd635803a4",
                 "baf11f7fb4e99fbd80e931dcdbb860b4e598182830ac7b310d7cd9efcb2a66d8",
                 "5e1429c0750845a2bd09b47029c3ae47ce8fa4dbc0effb92740d91ea7076dd4b"
             ]
         },
         "arm64": {
             "url": [
-                "https://github.com/microsoft/terminal/releases/download/v1.21.3231.0/Microsoft.WindowsTerminal_1.21.3231.0_arm64.zip",
+                "https://github.com/microsoft/terminal/releases/download/v1.22.10352.0/Microsoft.WindowsTerminal_1.22.10352.0_arm64.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/windows-terminal/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/windows-terminal/uninstall-context.reg"
             ],
             "hash": [
-                "1beb80610b38fc2930463b461c5aeaf62e43bfacaadc61fcf9d9858fd80efc53",
+                "5bd8ecca870f377fa98378d0a75c00d97152cf218c70458376ba0fe645aca387",
                 "baf11f7fb4e99fbd80e931dcdbb860b4e598182830ac7b310d7cd9efcb2a66d8",
                 "5e1429c0750845a2bd09b47029c3ae47ce8fa4dbc0effb92740d91ea7076dd4b"
             ]
         }
     },
-    "extract_dir": "terminal-1.21.3231.0",
+    "extract_dir": "terminal-1.22.10352.0",
     "installer": {
         "script": [
             "$winVer = [Environment]::OSVersion.Version",
