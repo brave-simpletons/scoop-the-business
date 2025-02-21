@@ -1,20 +1,20 @@
 {
-    "version": "26.0.9",
+    "version": "26.0.15",
     "description": "Professional diagramming",
     "homepage": "https://www.draw.io",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v26.0.9/draw.io-26.0.9-windows-no-installer.exe#/dl.7z",
-            "hash": "e884a90dcfac3c20333e776720276f24147323828f04059686ac449c963062ee",
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v26.0.15/draw.io-26.0.15-windows-no-installer.exe#/dl.7z",
+            "hash": "0addb0fa5c80936b7db08944e5149298695420bb7d0a80a15ebe3f5619ae3617",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v26.0.9/draw.io-ia32-26.0.9-windows-32bit-no-installer.exe#/dl.7z",
-            "hash": "b0a6163b818004f96a655771eb217fbff19a82d3575558e2e64324e4d089b304",
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v26.0.15/draw.io-ia32-26.0.15-windows-32bit-no-installer.exe#/dl.7z",
+            "hash": "f787d2891601072c96515eab1efedb47e24c0ba13157e9cf2a8d0ec17d791837",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
