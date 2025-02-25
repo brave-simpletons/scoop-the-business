@@ -1,5 +1,5 @@
 {
-    "version": "8.0.406",
+    "version": "10.0.100-preview.1.25120.13",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -22,22 +22,22 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.406/dotnet-sdk-8.0.406-win-x64.zip",
-            "hash": "sha512:88095e181228e9e496574ed6f36582303533369cd253f41abad6c3aaa7d23436736a3fb1dd6c908032b2cfda445f66d50628516395783bef3d5ee9bbb00edcd2"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/10.0.100-preview.1.25120.13/dotnet-sdk-10.0.100-preview.1.25120.13-win-x64.zip",
+            "hash": "sha512:f574e68dbb4214679a123f2527fe0478c7a7d2ca6900c81e2cfec03984421a894d8e1304a5683f077185b71b4491ed12d449636620f96b640156aa251f4a6a53"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.406/dotnet-sdk-8.0.406-win-arm64.zip",
-            "hash": "sha512:ea84fc09fac1907aa4f2c7a13df30d31cebd6cd3bea9d286f35900e2ca575269114761eeac5b6cf9d7bc9b9b72f04f9fbdc3c4f60c8a99596c6ad7ad5c0835be"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/10.0.100-preview.1.25120.13/dotnet-sdk-10.0.100-preview.1.25120.13-win-arm64.zip",
+            "hash": "sha512:42bc6fa5fb394801925eff1f296f33deebcbb9e0d506c2a7cbd345b38bbc0f26244df16fc999be62c6ea3b10ec50910650a548d500de3ce87cfcbc9d269a5794"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.406/dotnet-sdk-8.0.406-win-x86.zip",
-            "hash": "sha512:e7444c64b510cb759b2acab851168158aa740217a7e9beb3371b30935216ca1fa8279178e2d374086a3141b712d4a33b801f1883aa7bae158cc59bb18867d055"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/10.0.100-preview.1.25120.13/dotnet-sdk-10.0.100-preview.1.25120.13-win-x86.zip",
+            "hash": "sha512:5cb4fbc77bcce3cb6ab158e24d6f10697baedaf236b55fc1b80691ba094820ac4c0b57d8c66af33fa68076f06aa3a679a3383fd095775521a6d13fd0faa59cc4"
         }
     },
     "bin": "dotnet.exe",
     "env_add_path": [
         ".",
-        "\\sdk\\8.0.406"
+        "\\sdk\\10.0.100-preview.1.25120.13"
     ],
     "env_set": {
         "DOTNET_ROOT": "$dir",
