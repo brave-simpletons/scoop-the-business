@@ -15,7 +15,7 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/c7a5cfe483a5228fbbd3bd8e8a3f8d8954f8e71c/VSCode-win32-x64-1.98.0-1740782633272-insider.zip",
+                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/c7a5cfe483a5228fbbd3bd8e8a3f8d8954f8e71c/VSCode-win32-x64-1.98.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-associations.reg",
@@ -31,7 +31,7 @@
         },
         "arm64": {
             "url": [
-                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/c7a5cfe483a5228fbbd3bd8e8a3f8d8954f8e71c/VSCode-win32-arm64-1.98.0-1740782633272-insider.zip",
+                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/c7a5cfe483a5228fbbd3bd8e8a3f8d8954f8e71c/VSCode-win32-arm64-1.98.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-associations.reg",
@@ -112,20 +112,20 @@
     "checkver": {
         "url": "https://code.visualstudio.com/sha?build=insider",
         "jsonpath": "$.products[?(@.platform.os == 'win32-x64-archive')]",
-        "regex": "(?s)\"https://(?<url>.*)/(?<filename>VSCode-win32-x64-(?<version>((\\d+\\.?)*).*insider).zip)\",.*\"productVersion\"(.*){1}\"(?<productVersion>.+)-insider\",.*\"timestamp\"(.*){1}(?<timestamp>((\\d){13}))",
+        "regex": "(?s)\"https://(?<url>.*)/(?<filename>VSCode-win32-x64-(?<version>((\\d+\\.?)*)).*insider.zip)\",.*\"productVersion\"(.*){1}\"(?<productVersion>.+)-insider\",.*\"timestamp\"(.*){1}(?<timestamp>((\\d){13}))",
         "replace": "${productVersion}-${timestamp}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$matchUrl/VSCode-win32-x64-$version-insider.zip",
+                "url": "https://$matchUrl/VSCode-win32-x64-$matchVersion-insider.zip",
                 "hash": {
                     "url": "https://code.visualstudio.com/sha?build=insider",
                     "jsonpath": "$.products[?(@.platform.os == 'win32-x64-archive')].sha256hash"
                 }
             },
             "arm64": {
-                "url": "https://$matchUrl/VSCode-win32-arm64-$version-insider.zip",
+                "url": "https://$matchUrl/VSCode-win32-arm64-$matchVersion-insider.zip",
                 "hash": {
                     "url": "https://code.visualstudio.com/sha?build=insider",
                     "jsonpath": "$.products[?(@.platform.os == 'win32-arm64-archive')].sha256hash"
