@@ -1,5 +1,5 @@
 {
-    "version": "1.99.0-9670838518892",
+    "version": "1.99.0-1741621990865",
     "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications (Insiders Edition).",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -112,7 +112,7 @@
     "checkver": {
         "url": "https://code.visualstudio.com/sha?build=insider",
         "jsonpath": "$.products[?(@.platform.os == 'win32-x64-archive')]",
-        "regex": "(?s)\"https://(?<url>.*)/(?<filename>VSCode-win32-x64-(?<version>((\\d+\\.?)*)).*insider.zip)\",.*\"productVersion\"(.*){1}\"(?<productVersion>.+)-insider\",.*\"timestamp\"(.*){1}(?<timestamp>((\\d){13}))",
+        "regex": "(?s)\"https://(?<url>.*)/(?<filename>VSCode-win32-x64-(?<version>((\\d+\\.?)*)).*insider.zip)\",.*\"productVersion\"(.*){1}\"(?<productVersion>.+)-insider\",.*\"timestamp\"(.*){1}(?<timestamp>((\\d){13})),",
         "replace": "${productVersion}-${timestamp}"
     },
     "autoupdate": {
