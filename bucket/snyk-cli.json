@@ -1,10 +1,10 @@
 {
-    "version": "1.1296.0",
+    "version": "1.1296.1",
     "description": "Snyk CLI scans and monitors your projects for security vulnerabilities.",
     "homepage": "https://github.com/snyk/cli",
     "license": "Apache-2.0",
-    "url": "https://github.com/snyk/cli/releases/download/v1.1296.0/snyk-win.exe",
-    "hash": "4aa9623d67af3129fbd589302c7c8aea56ffccd34e59cb9d56c6ec429c00cf0b",
+    "url": "https://github.com/snyk/cli/releases/download/v1.1296.1/snyk-win.exe",
+    "hash": "0c58437aeb588115700bd38476ee765a0796e192d3e84cde52a5ba4a3b7fc05f",
     "bin": [
         [
             "snyk-win.exe",
