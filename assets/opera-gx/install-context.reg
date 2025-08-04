@@ -8,14 +8,14 @@ Windows Registry Editor Version 5.00
 "URL Protocol"=""
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\DefaultIcon]
-@="$operagx_root\\Launcher.exe,0"
+@="$operagx_root\\opera.exe,0"
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell]
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell\open]
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell\open\command]
-@="\"$operagx_root\\Launcher.exe\" -noautoupdate -- \"%1\""
+@="\"$operagx_root\\opera.exe\" -noautoupdate -- \"%1\""
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Opera GXStable\shell\open\ddeexec]
 @=""
@@ -31,7 +31,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\Capabilities]
 "ApplicationDescription"="Do more on the web"
-"ApplicationIcon"="\"$operagx_root\\Launcher.exe\",0"
+"ApplicationIcon"="\"$operagx_root\\opera.exe\",0"
 "ApplicationName"="Opera GX Stable"
 
 [HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\Capabilities\FileAssociations]
@@ -55,12 +55,12 @@ Windows Registry Editor Version 5.00
 "mailto"="Opera GXStable"
 
 [HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\DefaultIcon]
-@="$operagx_root\\Launcher.exe,0"
+@="$operagx_root\\opera.exe,0"
 
 [HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\InstallInfo]
-"ShowIconsCommand"="\"$operagx_root\\Launcher.exe\" --showicons"
-"HideIconsCommand"="\"$operagx_root\\Launcher.exe\" --hideicons"
-"ReinstallCommand"="\"$operagx_root\\Launcher.exe\" --makedefaultbrowser"
+"ShowIconsCommand"="\"$operagx_root\\opera.exe\" --showicons"
+"HideIconsCommand"="\"$operagx_root\\opera.exe\" --hideicons"
+"ReinstallCommand"="\"$operagx_root\\opera.exe\" --makedefaultbrowser"
 "IconsVisible"=dword:00000001
 
 [HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\shell]
@@ -68,4 +68,4 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\shell\open]
 
 [HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Opera GXStable\shell\open\command]
-@="\"$operagx_root\\Launcher.exe\""
+@="\"$operagx_root\\opera.exe\""
