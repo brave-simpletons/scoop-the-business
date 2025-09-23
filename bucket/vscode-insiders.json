@@ -1,5 +1,5 @@
 {
-    "version": "1.105.0-1758629380705",
+    "version": "1.105.0-1758517505095",
     "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications (Insiders Edition).",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -15,14 +15,14 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://vscode.download.prss.microsoft.com/dbazure/download/stable/0f0d87fa9e96c856c5212fc86db137ac0d783365/VSCode-win32-x64-1.104.1.zip\",\"name\":\"1.104.1\",\"version\":\"0f0d87fa9e96c856c5212fc86db137ac0d783365\",\"productVersion\":\"1.104.1\",\"hash\":\"cdde52611e27dd2610f118f3ee5dea4a40101ff7\",\"timestamp\":1758152259570,\"sha256hash\":\"4c2298336b6d587a83d7e8909b1831a25a1df4572bd6be8f95d8e944950bab53\",\"supportsFastUpdate\":true,\"build\":\"stable\",\"platform\":{\"os\":\"win32-x64-archive\",\"prettyname\":\"Windows .zip (x64)\"}},{\"url\":\"https://vscode.download.prss.microsoft.com/dbazure/download/insider/a26c8fc9f8515376428ba2469b9aeedb65ccd8d1/VSCode-win32-x64-1.105.0-insider.zip",
+                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/1217722c34017d9bd87e804e80efabba5a1e3226/VSCode-win32-x64-1.105.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-associations.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-associations.reg"
             ],
             "hash": [
-                "4c2298336b6d587a83d7e8909b1831a25a1df4572bd6be8f95d8e944950bab53",
+                "81c08c5407ee239471db57edd2e245da1a04fec21c33f8d4a4121269a879e251",
                 "b65d66860d9ccc18bfb05237b03e06db0d6c574be3d4b946c2a5e6865c08cb28",
                 "df2a5162e72e2518e2b75b4337c8e7b46c136554872af90fa0de1cf6ebef376f",
                 "745f5248e1e98812abdf03b4ab63d8ca1e5a1bbbb92174b9d1ef8b0785d8f1c3",
@@ -31,14 +31,14 @@
         },
         "arm64": {
             "url": [
-                "https://vscode.download.prss.microsoft.com/dbazure/download/stable/0f0d87fa9e96c856c5212fc86db137ac0d783365/VSCode-win32-x64-1.104.1.zip\",\"name\":\"1.104.1\",\"version\":\"0f0d87fa9e96c856c5212fc86db137ac0d783365\",\"productVersion\":\"1.104.1\",\"hash\":\"cdde52611e27dd2610f118f3ee5dea4a40101ff7\",\"timestamp\":1758152259570,\"sha256hash\":\"4c2298336b6d587a83d7e8909b1831a25a1df4572bd6be8f95d8e944950bab53\",\"supportsFastUpdate\":true,\"build\":\"stable\",\"platform\":{\"os\":\"win32-x64-archive\",\"prettyname\":\"Windows .zip (x64)\"}},{\"url\":\"https://vscode.download.prss.microsoft.com/dbazure/download/insider/a26c8fc9f8515376428ba2469b9aeedb65ccd8d1/VSCode-win32-arm64-1.105.0-insider.zip",
+                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/1217722c34017d9bd87e804e80efabba5a1e3226/VSCode-win32-arm64-1.105.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-associations.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-associations.reg"
             ],
             "hash": [
-                "e45449ff3f6afc050a685deedb80a748ca64fd4d8632c0051b972f61a0787cdc",
+                "300a3f2fbfa50ec05b0e2fd5ea5cdaddb512bf5dd1e998ee4cb13989b57d12ff",
                 "b65d66860d9ccc18bfb05237b03e06db0d6c574be3d4b946c2a5e6865c08cb28",
                 "df2a5162e72e2518e2b75b4337c8e7b46c136554872af90fa0de1cf6ebef376f",
                 "745f5248e1e98812abdf03b4ab63d8ca1e5a1bbbb92174b9d1ef8b0785d8f1c3",
