@@ -1,5 +1,5 @@
 {
-    "version": "1.106.0-1760967940711",
+    "version": "1.106.0-1761023019462",
     "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications (Insiders Edition).",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -15,14 +15,14 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/afecaaa7e88b2be589fc99ff1566c058b7fae906/VSCode-win32-x64-1.106.0-insider.zip",
+                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/7525da5e65a7ab2ca4542328ec2159d051320012/VSCode-win32-x64-1.106.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-associations.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-associations.reg"
             ],
             "hash": [
-                "84bd73a4db0f555c51240ddb61db36eef5ad41922b74e252ef5e198efb419eb3",
+                "ad3d07ebfc6b5d89a7ac3d1be0c09a6ec12af6bab5cc525004421dc5e36048c4",
                 "b65d66860d9ccc18bfb05237b03e06db0d6c574be3d4b946c2a5e6865c08cb28",
                 "df2a5162e72e2518e2b75b4337c8e7b46c136554872af90fa0de1cf6ebef376f",
                 "745f5248e1e98812abdf03b4ab63d8ca1e5a1bbbb92174b9d1ef8b0785d8f1c3",
@@ -31,14 +31,14 @@
         },
         "arm64": {
             "url": [
-                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/afecaaa7e88b2be589fc99ff1566c058b7fae906/VSCode-win32-arm64-1.106.0-insider.zip",
+                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/7525da5e65a7ab2ca4542328ec2159d051320012/VSCode-win32-arm64-1.106.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-associations.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-associations.reg"
             ],
             "hash": [
-                "c864cd9c01344c4827797c68ab1a5b6e2c58f5a0e549a77677f99ceca7f8bffb",
+                "dc723edebbb131feea9a63f19a133aac3e4fdeb6588edd3d4e0ab8ee6f157f76",
                 "b65d66860d9ccc18bfb05237b03e06db0d6c574be3d4b946c2a5e6865c08cb28",
                 "df2a5162e72e2518e2b75b4337c8e7b46c136554872af90fa0de1cf6ebef376f",
                 "745f5248e1e98812abdf03b4ab63d8ca1e5a1bbbb92174b9d1ef8b0785d8f1c3",
