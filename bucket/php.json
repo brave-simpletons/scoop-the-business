@@ -1,19 +1,19 @@
 {
-    "version": "8.3.14",
+    "version": "8.4.14",
     "description": "A popular general-purpose scripting language that is especially suited to web development. (thread safe)",
     "homepage": "https://windows.php.net/",
     "license": "PHP-3.01",
     "suggest": {
-        "vcredist": "vcredist2019"
+        "vcredist": "extras/vcredist2022"
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.3.14-Win32-vs16-x64.zip",
-            "hash": "3cd79691564c3634aec79f721773bf9308f8f4698904ca7ca27281ec099480d6"
+            "url": "https://windows.php.net/downloads/releases/php-8.4.14-Win32-vs17-x64.zip",
+            "hash": "9a2b383e618770846686f74303eb4bcae25f399f0127fb53da820dc821623ee3"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.3.14-Win32-vs16-x86.zip",
-            "hash": "b78c3334b611e0a2a9cfe19bc5ec1f582b12ecc9318708ecadb640907ddc3f63"
+            "url": "https://windows.php.net/downloads/releases/php-8.4.14-Win32-vs17-x86.zip",
+            "hash": "5493862ca86fe69d7bfaa252eecf5c276ec4d0f21e65debc6c62d2fbee6384ca"
         }
     },
     "pre_install": [
@@ -48,10 +48,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs16-x64.zip"
+                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs17-x64.zip"
             },
             "32bit": {
-                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs16-x86.zip"
+                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs17-x86.zip"
             }
         },
         "hash": {
