@@ -4,7 +4,7 @@
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
     "url": "https://github.com/macchrome/winchrome/releases/download/v142.7444.181-M142.0.7444.181-r1522585-Win64/ungoogled-chromium-142.0.7444.181-1_Win64.7z",
-    "hash": "sha1:3ae11c1d711182d4228f53c3de84a9734b5c4982",
+    "hash": "sha1:387da25458d80266e290022f2f38e46bb7913b3d",
     "extract_dir": "ungoogled-chromium-142.0.7444.181-1_Win64",
     "bin": [
         [
