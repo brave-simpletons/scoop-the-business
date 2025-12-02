@@ -1,5 +1,5 @@
 {
-    "version": "3.14.0",
+    "version": "3.14.1",
     "description": "A programming language that lets you work quickly and integrate systems more effectively.",
     "homepage": "https://www.python.org/",
     "license": "Python-2.0",
@@ -12,36 +12,36 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.14.1/python-3.14.1-amd64.exe#/setup.exe",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "52ceb249f65009d936e6504f97cce42870c11358cb6e48825e893f54e11620aa",
+                "md5:b236d1a32f73dcf1188db880acca5136",
                 "27c2d7e74442f356d54d29000379afd55078fb4ede00455fc012f81745e4bcac",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
         },
         "32bit": {
             "url": [
-                "https://www.python.org/ftp/python/3.14.0/python-3.14.0.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.14.1/python-3.14.1.exe#/setup.exe",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "0320e7643fa81ed889d72756bc3b41143ea84c3f1f7f95f3ac541153fff210fc",
+                "md5:6e3f352986d73a85d2ff1a6e757c513c",
                 "27c2d7e74442f356d54d29000379afd55078fb4ede00455fc012f81745e4bcac",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
         },
         "arm64": {
             "url": [
-                "https://www.python.org/ftp/python/3.14.0/python-3.14.0-arm64.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.14.1/python-3.14.1-arm64.exe#/setup.exe",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "11d26af62bb95dd7db174b9cb83aa0384facbc6839016cd17c11fd1b28031e3a",
+                "md5:c785ff40517799f03d952ad91887152a",
                 "27c2d7e74442f356d54d29000379afd55078fb4ede00455fc012f81745e4bcac",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
