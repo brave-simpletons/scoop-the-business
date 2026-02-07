@@ -16,9 +16,7 @@
             "hash": "cb4b6c8aaddeaa695021e6a35d1cf2410f81a7e2bc60f23d8dad1c39e6506799"
         }
     },
-    "installer": {
-        "script": "Expand-7zipArchive \"$dir\\chrome.7z\" -ExtractDir 'Chrome-bin' -Removal"
-    },
+    "extract_dir": "Chrome-bin",
     "bin": "chrome.exe",
     "shortcuts": [
         [
