@@ -1,5 +1,5 @@
 {
-    "version": "1.111.0-1772835039703",
+    "version": "1.111.0-1772840612845",
     "description": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications (Insiders Edition).",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -15,7 +15,7 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/3d96350ed546b786ace7de5ff1d13ab7433073f6/VSCode-win32-x64-1.111.0-insider.zip",
+                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/VSCode-win32-x64-1.111.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-associations.reg",
@@ -31,7 +31,7 @@
         },
         "arm64": {
             "url": [
-                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/3d96350ed546b786ace7de5ff1d13ab7433073f6/VSCode-win32-arm64-1.111.0-insider.zip",
+                "https://vscode.download.prss.microsoft.com/dbazure/download/insider/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/VSCode-win32-arm64-1.111.0-insider.zip",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/uninstall-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/vscode/install-associations.reg",
