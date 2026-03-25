@@ -1,5 +1,5 @@
 {
-    "version": "12.3.0",
+    "version": "12.3.2",
     "description": "Complete API development environment.",
     "homepage": "https://www.getpostman.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.pstmn.io/download/12.3.0/Postman-x64-12.3.0-full.nupkg",
-            "hash": "sha1:4a796cffe35e2126383e866e00e7a20e52f0c9a8"
+            "url": "https://dl.pstmn.io/download/12.3.2/Postman-x64-12.3.2-full.nupkg",
+            "hash": "sha1:b8ec91f3b6c1803d939cbebf405f8d98f3f0b5de"
         }
     },
     "extract_dir": "lib\\net45",
