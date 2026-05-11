@@ -1,17 +1,17 @@
 {
-    "version": "8.9.4",
+    "version": "8.9.5",
     "description": "A free source code editor and Notepad replacement that supports several languages.",
     "homepage": "https://notepad-plus-plus.org",
     "license": "GPL-2.0-only",
     "notes": "The following page explains how to add explorer context menu entries for notepad++. https://npp-user-manual.org/docs/shell-extension",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.4/npp.8.9.4.portable.x64.zip",
-            "hash": "1b336227c9384b42d1f287fa53965166cd1abaf7ccb82dd178ee5e9b3138b505"
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.5/npp.8.9.5.portable.x64.zip",
+            "hash": "15d887f620a3846e81d07592a546c3f83bb39046ff03c8b915e656a78c8b8de3"
         },
         "32bit": {
-            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.4/npp.8.9.4.portable.zip",
-            "hash": "820272b38b52f89c9de55d5029a578bc7b178a7b06d36341bcf04404dbaf0bbb"
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.5/npp.8.9.5.portable.zip",
+            "hash": "3c74b3b96ea861580529580c006bbdff4a9a64c62e8fd21d5ddb02fc29045485"
         }
     },
     "pre_install": [
