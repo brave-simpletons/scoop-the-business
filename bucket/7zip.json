@@ -1,5 +1,5 @@
 {
-    "version": "26.01",
+    "version": "26.02",
     "description": "A multi-format file archiver with high compression ratios",
     "homepage": "https://www.7-zip.org/",
     "license": {
@@ -9,36 +9,36 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://www.7-zip.org/a/7z2601-x64.exe#/7z.26.01.exe",
+                "https://www.7-zip.org/a/7z2602-x64.exe#/7z.26.02.exe",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
             ],
             "hash": [
-                "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d",
+                "6745fa76dc2ea031596d8678f6f6b99c3c1b435b4164a63485adbbc7b8d82ef0",
                 "a3e7a9e3088e4316a7281ef7f0e95168dcdf68d28653b6e44db7b61c9eb01ae6",
                 "494fb5be4bc0b4323701319e72d31acb8c1c8a5d7c94f0e26620a415f551fcfa"
             ]
         },
         "32bit": {
             "url": [
-                "https://www.7-zip.org/a/7z2601.exe#/7z.26.01.exe",
+                "https://www.7-zip.org/a/7z2602.exe#/7z.26.02.exe",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
             ],
             "hash": [
-                "615976598f800c70827c5a47e68c2b0d2b17d048b9721ba071c8af825d2476bd",
+                "17d894c17b04984b6ffcc1b31926b39c42d315cd861c3adbf7f34bd941d529ac",
                 "a3e7a9e3088e4316a7281ef7f0e95168dcdf68d28653b6e44db7b61c9eb01ae6",
                 "494fb5be4bc0b4323701319e72d31acb8c1c8a5d7c94f0e26620a415f551fcfa"
             ]
         },
         "arm64": {
             "url": [
-                "https://www.7-zip.org/a/7z2601-arm64.exe#/7z.26.01.exe",
+                "https://www.7-zip.org/a/7z2602-arm64.exe#/7z.26.02.exe",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/install-context.reg",
                 "https://raw.githubusercontent.com/brave-simpletons/scoop-the-business/main/assets/7zip/uninstall-context.reg"
             ],
             "hash": [
-                "1fecf4e3407950939c8ffcc3e42e3039821997dea155301c75369474e5f15175",
+                "7c6fde79ed5e11b81c7bb6573b7962d3b6322aa5fce69c33ed19f672b55173ab",
                 "a3e7a9e3088e4316a7281ef7f0e95168dcdf68d28653b6e44db7b61c9eb01ae6",
                 "494fb5be4bc0b4323701319e72d31acb8c1c8a5d7c94f0e26620a415f551fcfa"
             ]
