@@ -1,11 +1,11 @@
 {
-    "version": "150.0.7871.255",
+    "version": "150.0.7871.256",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web.",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/macchrome/winchrome/releases/download/v150.7871.255-M150.0.7871.255-r1639810-Win64/ungoogled-chromium-150.0.7871.255-1_Win64.7z",
-    "hash": "sha1:2324ff9dfb4b95d3ebe97435f2952912d15e4ff9",
-    "extract_dir": "ungoogled-chromium-150.0.7871.255-1_Win64",
+    "url": "https://github.com/macchrome/winchrome/releases/download/v150.7871.256-M150.0.7871.256-r1639810-Win64/ungoogled-chromium-150.0.7871.256-1_Win64.7z",
+    "hash": "sha1:39c577ab1ec817e1c645ae3088aa89c153009ff6",
+    "extract_dir": "ungoogled-chromium-150.0.7871.256-1_Win64",
     "bin": [
         [
             "chrome.exe",
