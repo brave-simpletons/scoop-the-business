@@ -12,7 +12,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/TabularEditor/TabularEditor/releases/download/2.29.0/TabularEditor.Portable.zip",
-            "hash": "3951fb6c104a8b211244bd91c4d94c34d0bee4ab54a625b022322a8f90bf3157"
+            "hash": "c0d3a7abda4572baaf3aeedf9cb342ce7ad4d9840e6438d6b13df02267d308a4"
         }
     },
     "bin": "TabularEditor.exe",
